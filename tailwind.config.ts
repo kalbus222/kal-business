@@ -1,4 +1,3 @@
-import { theme } from "tailwindcss";
 import animate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
