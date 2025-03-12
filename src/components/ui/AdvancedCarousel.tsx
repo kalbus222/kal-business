@@ -163,7 +163,9 @@ export function AdvancedCarousel({
             {item.video && (
               <div className="relative mb-8 rounded-lg overflow-hidden">
                 <video
-                  ref={(el) => (videoRefs.current[item.id.toString()] = el)}
+                  ref={(el) => {
+                    videoRefs.current[item.id.toString()] = el;
+                  }}
                   className="w-full h-auto"
                   controls={false}
                   muted
