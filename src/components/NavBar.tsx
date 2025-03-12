@@ -132,10 +132,10 @@ const NavBar = () => {
                 onClick={scrollToContact}
               >
                 <p className="text-white text-sm">CONTACT US</p>
-                <span className="content-center px-4 bg-accent aspect-square rounded-full">
+                <span className="content-center px-3 bg-accent aspect-square rounded-full">
                   <Image
-                    height={16}
-                    width={16}
+                    height={14}
+                    width={14}
                     src="/images/tiltedArrow.png"
                     alt="arrow"
                   />
