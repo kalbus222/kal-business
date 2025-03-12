@@ -1,10 +1,12 @@
 import Image from "next/image";
 import videoClip from "../../public/images/videoClip.png";
-
+import { ArrowDown } from "lucide-react";
 import {
   AdvancedCarousel,
   type CarouselItem,
 } from "@/components/ui/AdvancedCarousel";
+
+import Link from "next/link";
 
 const productionItems: CarouselItem[] = [
   {
@@ -42,7 +44,7 @@ export function FilmSection() {
       </div>
       <section className="grid grid-rows-1 grid-cols-1 place-items-center w-full h-fit md:py-12 px-4 md:px-12">
         <div className="hidden md:block relative h-fit col-start-1 row-start-1">
-          <h2 className="absolute right-0 font-sofia-sans text-5xl text-white">
+          <h2 className="absolute right-0 font-sofia-sans text-5xl text-foreground">
             FROM SCRIPT <br /> <span className="text-accent">TO SCREEN</span>
           </h2>
           <video
@@ -54,9 +56,18 @@ export function FilmSection() {
           />
         </div>
         <div className="bg-primary w-9/10 rounded-3xl p-6 md:p-12 space-y-4 col-start-1 row-start-1 z-10 mt-4 md:mt-96 ">
-          <h2 className="font-sofia-sans text-3xl text-white">
-            SOME OF OUR <br /> <span className="text-accent">PRODUCTIONS</span>
-          </h2>
+          <div className="flex justify-between">
+            <h2 className="font-sofia-sans text-3xl text-white">
+              SOME OF OUR <br />{" "}
+              <span className="text-accent">PRODUCTIONS</span>
+            </h2>
+            <Link
+              href="/film"
+              className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+            >
+              <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
+            </Link>
+          </div>
           <AdvancedCarousel
             items={productionItems}
             showArrows={false}

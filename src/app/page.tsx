@@ -9,6 +9,7 @@ import { FilmSection } from "@/components/FilmSection";
 import { ContactCTA } from "@/components/ContactCTA";
 import { ArrowDown } from "lucide-react";
 import { AutoImageCarousel } from "@/components/ImageSlider";
+import Link from "next/link";
 
 const carouselImages = [
   {
@@ -29,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <section className="pt-32 px-6 md:px-12 space-y-6 md:space-y-0">
-        <div className="bg-gradient-to-b from-transparent from-30% via-primary to-primary">
+        <div className="bg-gradient-to-b from-transparent from-30% via-primary to-primary rounded-[40px]">
           <div className="grid grid-cols-1 grid-rows-1 gap-6">
             <Image
               src={bgShape}
@@ -41,9 +42,12 @@ export default function Home() {
                 YOUR ONE-STOP <br /> SOLUTION FOR <br />{" "}
                 <span className="text-accent">BUSINESS</span>{" "}
               </h1>
-              <button className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in">
+              <Link
+                href="#contact-section"
+                className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+              >
                 <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
-              </button>
+              </Link>
             </div>
             <div className="w-[45%] z-10 col-start-1 row-start-1 justify-self-end">
               <AutoImageCarousel

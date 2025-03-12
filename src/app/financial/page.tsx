@@ -22,7 +22,7 @@ export default function AccountingConsultingPage() {
       />
 
       {/* Overview Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 md:px-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-3xl overflow-hidden">
@@ -240,9 +240,7 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-[var(--color-primary-foreground)] font-semibold">
-                    Sarah Johnson
-                  </h4>
+                  <h4 className="text-white font-semibold">Sarah Johnson</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
                     CEO, TechStart Inc.
                   </p>
@@ -259,9 +257,7 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-[var(--color-primary-foreground)] font-semibold">
-                    Michael Chen
-                  </h4>
+                  <h4 className="text-white font-semibold">Michael Chen</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
                     CFO, Global Logistics
                   </p>
@@ -278,9 +274,7 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-[var(--color-primary-foreground)] font-semibold">
-                    Emily Rodriguez
-                  </h4>
+                  <h4 className="text-white font-semibold">Emily Rodriguez</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
                     Owner, Artisan Crafts
                   </p>

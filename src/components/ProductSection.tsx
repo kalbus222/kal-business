@@ -1,6 +1,7 @@
 import { ArrowDown } from "lucide-react";
 import { ProductCarousel } from "@/components/ProductCarousel";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface SourcingSectionProps {
   className?: string;
@@ -48,9 +49,12 @@ export function SourcingSection({ className }: SourcingSectionProps) {
                 <br />& SUPPLY SOLUTIONS
               </h2>
               <div className="mt-6">
-                <button className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in">
+                <Link
+                  href="/trading"
+                  className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+                >
                   <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
-                </button>
+                </Link>
               </div>
             </div>
 

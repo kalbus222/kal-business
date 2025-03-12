@@ -69,7 +69,8 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 mb-4 md:mb-0">
-            © 2023 KAL General Business Center. All rights reserved.
+            © {new Date().getFullYear()} KAL General Business Center. All rights
+            reserved.
           </p>
           <div className="flex space-x-4">
             <SocialIcon Icon={Facebook} href="https://facebook.com" />

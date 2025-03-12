@@ -80,6 +80,8 @@
   --accent: #52acdc;
   --primary: #101724;
   --secondary: #e1ebfb;
+  --frost-bg: rgba(246, 251, 255, 0.7);
+  --toggle-bg: url("/images/Moon.png");
 }
 
 .dark {
@@ -112,6 +114,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+  --frost-bg: rgba(2, 9, 12, 0.3);
+  --toggle-bg: url("/images/Sun.png");
 }
 
 @layer base {
@@ -122,13 +126,14 @@
     @apply bg-background text-foreground;
   }
 
-  .darkFrost {
-    background: rgba(2, 9, 12, 0.3);
+  .frost {
+    background: var(--frost-bg);
     backdrop-filter: blur(140px);
   }
 
-  .lightFrost {
-    background: rgba(246, 251, 255, 0.7);
-    backdrop-filter: blur(140px);
+  .icon-bg {
+    background-image: var(--toggle-bg);
+    background-position: center;
+    background-size: contain;
   }
 }

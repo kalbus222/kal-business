@@ -62,23 +62,6 @@ export function ContactCTA() {
               <p className="text-[#52acdc] mb-1">EMAIL</p>
               <p className="text-white">INFO@KALBUSINESS.COM</p>
             </div>
-
-            <div className="flex space-x-4">
-              {["facebook", "twitter", "instagram", "linkedin", "youtube"].map(
-                (social) => (
-                  <a
-                    key={social}
-                    href={`https://${social}.com`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full border border-[#52acdc] flex items-center justify-center text-[#52acdc] hover:bg-[#52acdc] hover:text-white transition-colors"
-                  >
-                    <span className="sr-only">{social}</span>
-                    <i className={`fab fa-${social}`}></i>
-                  </a>
-                )
-              )}
-            </div>
           </div>
 
           {/* Right Column */}

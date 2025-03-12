@@ -14,7 +14,9 @@ export function PageHeader({
   className,
 }: PageHeaderProps) {
   return (
-    <section className={cn("bg-[#101724] py-16 px-4 pt-32", className)}>
+    <section
+      className={cn("bg-[#101724] py-16 px-4 md:px-12 pt-32", className)}
+    >
       <div className="container mx-auto">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
