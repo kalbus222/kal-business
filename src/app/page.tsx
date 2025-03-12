@@ -67,7 +67,11 @@ export default function Home() {
               </button>
             </div>
             <div className="text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl  rounded-bl-none md:rounded-tr-none border-[0.5px] border-accent/50 p-6">
-              <Image src={sector1} className="object-cover h-24 rounded-full" />
+              <Image
+                src={sector1}
+                className="object-cover h-24 rounded-full"
+                alt="sector"
+              />
               <h2 className="font-sofia-sans text-xl text-accent">
                 General Trading
               </h2>
@@ -77,7 +81,11 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl rounded-tl-none rounded-br-none md:rounded-tl-none md:rounded-br-none border-[0.5px] border-accent/50 p-6">
-              <Image src={sector2} className="object-cover h-24 rounded-full" />
+              <Image
+                src={sector2}
+                className="object-cover h-24 rounded-full"
+                alt="sector"
+              />
               <h2 className="font-sofia-sans text-xl text-accent">
                 General Accounting & Consultancy
               </h2>
@@ -86,7 +94,11 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl rounded-tr-none md:rounded-bl-none border-[0.5px] border-accent/50 p-6">
-              <Image src={sector3} className="object-cover h-24 rounded-full" />
+              <Image
+                src={sector3}
+                className="object-cover h-24 rounded-full"
+                alt="sector"
+              />
               <h2 className="font-sofia-sans text-xl text-accent">
                 Film Production
               </h2>
