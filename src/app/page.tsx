@@ -30,12 +30,12 @@ export default function Home() {
   return (
     <div>
       <section className="pt-32 px-6 md:px-12 space-y-6 md:space-y-0">
-        <div className="bg-gradient-to-b from-transparent from-30% via-primary to-primary rounded-[40px]">
+        <div className="bg-gradient-to-b from-transparent from-30% via-primary to-primary rounded-[40px] space-y-6 md:space-y-0">
           <div className="grid grid-cols-1 grid-rows-1 gap-6">
             <Image
               src={bgShape}
               alt="bg-shape"
-              className="w-full col-start-1 row-start-1"
+              className="hidden md:inline w-full col-start-1 row-start-1"
             />
             <div className="hidden md:flex flex-col w-1/2 z-10 col-start-1 row-start-1 justify-self-start lg:p-12 md:p-8">
               <h1 className="font-sofia-sans text-3xl lg:text-6xl text-white">
@@ -49,10 +49,11 @@ export default function Home() {
                 <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
               </Link>
             </div>
-            <div className="w-[45%] z-10 col-start-1 row-start-1 justify-self-end">
+            <div className="w-full md:w-[45%] z-10 col-start-1 row-start-1 justify-self-end">
               <AutoImageCarousel
                 images={carouselImages}
                 transitionEffect={"fade"}
+                interval={2000}
               />
             </div>
           </div>
