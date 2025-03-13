@@ -18,7 +18,8 @@ const NavBar = () => {
 
   const Menu = (
     <Image
-      src={theme === "dark" ? `/images/MenuLight.png` : `/images/Menu.png`}
+      src={`/images/Menu.png`}
+      className="menu-icon"
       alt="menu icon"
       width={24}
       height={24}
