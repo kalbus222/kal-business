@@ -63,9 +63,9 @@ export function FilmSection() {
             </h2>
             <Link
               href="/film"
-              className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+              className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
             >
-              <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
+              <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
             </Link>
           </div>
           <AdvancedCarousel

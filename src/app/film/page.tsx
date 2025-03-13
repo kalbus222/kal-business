@@ -38,7 +38,7 @@ export default function FilmProductionPage() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
                   FROM SCRIPT
                   <br />
-                  <span className="text-[#52acdc]">TO SCREEN</span>
+                  <span className="text-accent">TO SCREEN</span>
                 </h2>
                 <p className="font-mulish text-white/90 text-lg mb-8">
                   We bring stories to life through captivating visuals,
@@ -56,14 +56,14 @@ export default function FilmProductionPage() {
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-12 text-center">
             Our Production
             <br />
-            <span className="text-[#52acdc]">Services</span>
+            <span className="text-accent">Services</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-[#101724] p-8 rounded-3xl">
-              <div className="w-12 h-12 rounded-full bg-[#52acdc]/20 flex items-center justify-center mb-6">
-                <Film className="w-6 h-6 text-[#52acdc]" />
+            <div className="bg-primary p-8 rounded-3xl">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+                <Film className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">
                 Feature Films
@@ -75,9 +75,9 @@ export default function FilmProductionPage() {
             </div>
 
             {/* Service 2 */}
-            <div className="bg-[#101724] p-8 rounded-3xl">
-              <div className="w-12 h-12 rounded-full bg-[#52acdc]/20 flex items-center justify-center mb-6">
-                <Video className="w-6 h-6 text-[#52acdc]" />
+            <div className="bg-primary p-8 rounded-3xl">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+                <Video className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">
                 Documentaries
@@ -89,9 +89,9 @@ export default function FilmProductionPage() {
             </div>
 
             {/* Service 3 */}
-            <div className="bg-[#101724] p-8 rounded-3xl">
-              <div className="w-12 h-12 rounded-full bg-[#52acdc]/20 flex items-center justify-center mb-6">
-                <Camera className="w-6 h-6 text-[#52acdc]" />
+            <div className="bg-primary p-8 rounded-3xl">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+                <Camera className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">
                 Commercial Production
@@ -103,9 +103,9 @@ export default function FilmProductionPage() {
             </div>
 
             {/* Service 4 */}
-            <div className="bg-[#101724] p-8 rounded-3xl">
-              <div className="w-12 h-12 rounded-full bg-[#52acdc]/20 flex items-center justify-center mb-6">
-                <Edit className="w-6 h-6 text-[#52acdc]" />
+            <div className="bg-primary p-8 rounded-3xl">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+                <Edit className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">
                 Post-Production
@@ -117,9 +117,9 @@ export default function FilmProductionPage() {
             </div>
 
             {/* Service 5 */}
-            <div className="bg-[#101724] p-8 rounded-3xl">
-              <div className="w-12 h-12 rounded-full bg-[#52acdc]/20 flex items-center justify-center mb-6">
-                <Music className="w-6 h-6 text-[#52acdc]" />
+            <div className="bg-primary p-8 rounded-3xl">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+                <Music className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">
                 Sound Design
@@ -131,9 +131,9 @@ export default function FilmProductionPage() {
             </div>
 
             {/* Service 6 */}
-            <div className="bg-[#101724] p-8 rounded-3xl">
-              <div className="w-12 h-12 rounded-full bg-[#52acdc]/20 flex items-center justify-center mb-6">
-                <Users className="w-6 h-6 text-[#52acdc]" />
+            <div className="bg-primary p-8 rounded-3xl">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+                <Users className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">
                 Talent Management
@@ -153,12 +153,12 @@ export default function FilmProductionPage() {
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-12 text-center">
             Our YouTube
             <br />
-            <span className="text-[#52acdc]">Channels</span>
+            <span className="text-accent">Channels</span>
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Yem Productions */}
-            <div className="bg-primary rounded-3xl overflow-hidden shadow-md">
+            <div className="bg-foreground rounded-3xl overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <Image
                   src="/placeholder.svg?height=720&width=1280"
@@ -185,7 +185,7 @@ export default function FilmProductionPage() {
                     <span>Subscribe</span>
                   </a>
                 </div>
-                <p className="font-mulish text-white/80 mb-4">
+                <p className="font-mulish text-background/80 mb-4">
                   Yem Productions specializes in creating thought-provoking
                   documentaries and short films that explore cultural identities
                   and social issues. With a focus on authentic storytelling,
@@ -193,13 +193,13 @@ export default function FilmProductionPage() {
                   narratives and cinematic quality.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
                     Documentaries
                   </span>
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
                     Cultural Films
                   </span>
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
                     Social Impact
                   </span>
                 </div>
@@ -207,7 +207,7 @@ export default function FilmProductionPage() {
             </div>
 
             {/* The Sweet Children Production */}
-            <div className="bg-primary rounded-3xl overflow-hidden shadow-md">
+            <div className="bg-foreground rounded-3xl overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <Image
                   src="/placeholder.svg?height=720&width=1280"
@@ -234,7 +234,7 @@ export default function FilmProductionPage() {
                     <span>Subscribe</span>
                   </a>
                 </div>
-                <p className="font-mulish text-white/80 mb-4">
+                <p className="font-mulish text-background/80 mb-4">
                   The Sweet Children Production creates heartwarming content
                   focused on children's stories and educational entertainment.
                   Their channel features a mix of animated shorts, educational
@@ -242,13 +242,13 @@ export default function FilmProductionPage() {
                   minds while entertaining viewers of all ages.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
                     Children's Content
                   </span>
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
                     Educational
                   </span>
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
                     Family-Friendly
                   </span>
                 </div>
@@ -286,31 +286,31 @@ export default function FilmProductionPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 px-4 md:px-12 bg-gray-50">
+      <section className="py-16 px-4 md:px-12 bg-background">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#101724] mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-12 text-center">
             Our Production
             <br />
-            <span className="text-[#52acdc]">Process</span>
+            <span className="text-accent">Process</span>
           </h2>
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-[#52acdc]/20 transform -translate-x-1/2"></div>
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-accent/20 transform -translate-x-1/2"></div>
 
             <div className="space-y-12 md:space-y-0">
               {/* Step 1 */}
               <div className="md:grid md:grid-cols-2 md:gap-8 relative">
                 <div className="md:text-right md:pr-12">
-                  <h3 className="text-2xl font-semibold text-[#101724] mb-4">
+                  <h3 className="text-2xl font-semibold text-accent mb-4">
                     Concept Development
                   </h3>
-                  <p className="font-mulish text-gray-700 mb-4">
+                  <p className="font-mulish text-foreground mb-4">
                     We work closely with you to understand your vision and
                     develop a compelling concept that aligns with your goals.
                   </p>
                 </div>
-                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-[#52acdc] transform -translate-x-1/2"></div>
+                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-accent transform -translate-x-1/2"></div>
                 <div className="mt-4 md:mt-0 md:pl-12">
                   <Image
                     src="/images/concept.png"
@@ -325,16 +325,16 @@ export default function FilmProductionPage() {
               {/* Step 2 */}
               <div className="md:grid md:grid-cols-2 md:gap-8 relative">
                 <div className="md:order-2 md:pl-12">
-                  <h3 className="text-2xl font-semibold text-[#101724] mb-4">
+                  <h3 className="text-2xl font-semibold text-accent mb-4">
                     Pre-Production
                   </h3>
-                  <p className="font-mulish text-gray-700 mb-4">
+                  <p className="font-mulish text-foreground mb-4">
                     Meticulous planning including scriptwriting, storyboarding,
                     location scouting, and casting to ensure a smooth production
                     process.
                   </p>
                 </div>
-                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-[#52acdc] transform -translate-x-1/2"></div>
+                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-accent transform -translate-x-1/2"></div>
                 <div className="mt-4 md:mt-0 md:order-1 md:text-right md:pr-12">
                   <Image
                     src="/images/plan.png"
@@ -349,15 +349,15 @@ export default function FilmProductionPage() {
               {/* Step 3 */}
               <div className="md:grid md:grid-cols-2 md:gap-8 relative">
                 <div className="md:text-right md:pr-12">
-                  <h3 className="text-2xl font-semibold text-[#101724] mb-4">
+                  <h3 className="text-2xl font-semibold text-accent mb-4">
                     Production
                   </h3>
-                  <p className="font-mulish text-gray-700 mb-4">
+                  <p className="font-mulish text-foreground mb-4">
                     Professional filming with state-of-the-art equipment and
                     experienced crew to capture high-quality footage.
                   </p>
                 </div>
-                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-[#52acdc] transform -translate-x-1/2"></div>
+                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-accent transform -translate-x-1/2"></div>
                 <div className="mt-4 md:mt-0 md:pl-12">
                   <Image
                     src="/images/clapper.png"
@@ -372,16 +372,16 @@ export default function FilmProductionPage() {
               {/* Step 4 */}
               <div className="md:grid md:grid-cols-2 md:gap-8 relative">
                 <div className="md:order-2 md:pl-12">
-                  <h3 className="text-2xl font-semibold text-[#101724] mb-4">
+                  <h3 className="text-2xl font-semibold text-accent mb-4">
                     Post-Production
                   </h3>
-                  <p className="font-mulish text-gray-700 mb-4">
+                  <p className="font-mulish text-foreground mb-4">
                     Expert editing, color grading, sound design, and visual
                     effects to transform raw footage into a polished final
                     product.
                   </p>
                 </div>
-                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-[#52acdc] transform -translate-x-1/2"></div>
+                <div className="hidden md:block absolute left-1/2 top-6 w-8 h-8 rounded-full bg-accent transform -translate-x-1/2"></div>
                 <div className="mt-4 md:mt-0 md:order-1 md:text-right md:pr-12">
                   <Image
                     src="/images/editing.png"
@@ -398,12 +398,12 @@ export default function FilmProductionPage() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-16 px-4 md:px-12 bg-[#101724]">
+      <section className="py-16 px-4 md:px-12 bg-primary">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12 text-center">
             Featured
             <br />
-            <span className="text-[#52acdc]">Productions</span>
+            <span className="text-accent">Productions</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -421,8 +421,8 @@ export default function FilmProductionPage() {
                   The Journey Within
                 </h3>
                 <p className="font-mulish text-white/80">Feature Documentary</p>
-                <button className="mt-4 bg-[#52acdc] hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
-                  Watch Trailer <ArrowRight className="w-4 h-4" />
+                <button className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
+                  Watch <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -441,8 +441,8 @@ export default function FilmProductionPage() {
                   Urban Echoes
                 </h3>
                 <p className="font-mulish text-white/80">Short Film Series</p>
-                <button className="mt-4 bg-[#52acdc] hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
-                  Watch Trailer <ArrowRight className="w-4 h-4" />
+                <button className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
+                  Watch <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -461,8 +461,8 @@ export default function FilmProductionPage() {
                   Global Brands Campaign
                 </h3>
                 <p className="font-mulish text-white/80">Commercial Series</p>
-                <button className="mt-4 bg-[#52acdc] hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
-                  Watch Trailer <ArrowRight className="w-4 h-4" />
+                <button className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
+                  Watch <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>

@@ -43,17 +43,17 @@ export function SourcingSection({ className }: SourcingSectionProps) {
           {/* Left column */}
           <div className="flex flex-col space-y-6">
             {/* Top panel */}
-            <div className="bg-[#101724] rounded-3xl p-8 flex flex-col justify-between min-h-[200px]">
-              <h2 className="text-[#52acdc] text-3xl md:text-4xl font-sofia-sans leading-tight">
+            <div className="bg-primary rounded-3xl p-8 flex flex-col justify-between min-h-[200px]">
+              <h2 className="text-accent text-3xl md:text-4xl font-sofia-sans leading-tight">
                 SEAMLESS SOURCING
                 <br />& SUPPLY SOLUTIONS
               </h2>
               <div className="mt-6">
                 <Link
                   href="/trading"
-                  className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+                  className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
                 >
-                  <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
+                  <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
                 </Link>
               </div>
             </div>
@@ -75,7 +75,7 @@ export function SourcingSection({ className }: SourcingSectionProps) {
               <br />
               DELIVERY.
             </h2>
-            <p className="text-[#52acdc] font-mulish text-xl leading-relaxed">
+            <p className="text-accent font-mulish text-xl leading-relaxed">
               We source and supply high-quality goods efficiently, so you can
               focus on growing your business.
             </p>

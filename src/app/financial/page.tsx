@@ -41,14 +41,14 @@ export default function AccountingConsultingPage() {
                 <br />
                 <span className="text-[var(--color-accent)]">Guidance</span>
               </h2>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-6">
+              <p className="font-mulish text-foreground/80 mb-6">
                 Our Accounting and Financial Consulting services provide
                 comprehensive financial solutions designed to optimize your
                 business performance. From day-to-day accounting to strategic
                 financial planning, our expert team delivers insights and
                 strategies that drive growth and profitability.
               </p>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-6">
+              <p className="font-mulish text-foreground/80 mb-6">
                 We work closely with businesses of all sizes to understand their
                 unique challenges and objectives, developing tailored financial
                 strategies that align with both short-term needs and long-term
@@ -77,7 +77,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Tax Planning & Compliance
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-4">
+              <p className="font-mulish text-white/80 mb-4">
                 Strategic tax planning and preparation services to minimize
                 liabilities and ensure compliance with regulations.
               </p>
@@ -91,7 +91,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Business Budgeting
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-4">
+              <p className="font-mulish text-white/80 mb-4">
                 Comprehensive budgeting and forecasting to help you plan
                 effectively and allocate resources efficiently.
               </p>
@@ -105,7 +105,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Financial Advisory
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-4">
+              <p className="font-mulish text-white/80 mb-4">
                 Expert guidance on financial decisions, investment
                 opportunities, and strategic planning for growth.
               </p>
@@ -119,7 +119,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Cost Reduction Strategies
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-4">
+              <p className="font-mulish text-white/80 mb-4">
                 Identify opportunities to optimize expenses and improve
                 profitability without compromising quality.
               </p>
@@ -133,7 +133,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Bookkeeping
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-4">
+              <p className="font-mulish text-white/80 mb-4">
                 Accurate and timely recording of financial transactions to
                 maintain organized and compliant records.
               </p>
@@ -147,7 +147,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Risk Management
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)] mb-4">
+              <p className="font-mulish text-white/80 mb-4">
                 Identify and mitigate financial risks through comprehensive
                 analysis and strategic planning.
               </p>
@@ -173,7 +173,7 @@ export default function AccountingConsultingPage() {
                 1
               </div>
               <h3 className="text-xl font-bold text-accent mb-4">Assessment</h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)]">
+              <p className="font-mulish text-foreground/80">
                 Comprehensive evaluation of your current financial situation,
                 processes, and objectives.
               </p>
@@ -186,7 +186,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Strategy Development
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)]">
+              <p className="font-mulish text-foreground/80">
                 Creation of tailored financial strategies aligned with your
                 business goals and market conditions.
               </p>
@@ -199,7 +199,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Implementation
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)]">
+              <p className="font-mulish text-foreground/80">
                 Execution of financial strategies with clear milestones,
                 timelines, and performance metrics.
               </p>
@@ -212,7 +212,7 @@ export default function AccountingConsultingPage() {
               <h3 className="text-xl font-bold text-accent mb-4">
                 Monitoring & Optimization
               </h3>
-              <p className="font-mulish text-[var(--color-muted-foreground)]">
+              <p className="font-mulish text-foreground/80">
                 Ongoing analysis and refinement of strategies to ensure optimal
                 financial performance.
               </p>

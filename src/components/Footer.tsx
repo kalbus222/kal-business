@@ -35,7 +35,7 @@ const SocialIcon = ({
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-[#52acdc] hover:text-white transition-colors"
+    className="text-accent hover:text-white transition-colors"
   >
     <Icon size={24} />
   </a>
@@ -43,7 +43,7 @@ const SocialIcon = ({
 
 export function Footer() {
   return (
-    <footer className="bg-[#02090c] text-white relative px-5 md:px-12">
+    <footer className="bg-primary text-white relative px-5 md:px-12">
       {/* Unique shape */}
 
       <div className="container mx-auto px-4 pt-24 pb-12">

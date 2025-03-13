@@ -76,17 +76,17 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --background: #f6fbff;
-  --foreground: #02020a;
-  --accent: #52acdc;
-  --primary: #101724;
+  --foreground: #051524;
+  --accent: #c69d45;
+  --primary: #001f3f;
   --secondary: #e1ebfb;
-  --frost-bg: rgba(246, 251, 255, 0.7);
+  --frost-bg: rgba(246, 251, 255, 0.4);
   --toggle-bg: url("/images/Moon.png");
   --icon-filter: none;
 }
 
 .dark {
-  --background: #02020a;
+  --background: #051524;
   --foreground: #f6fbff;
   --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -115,7 +115,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
-  --frost-bg: rgba(2, 9, 12, 0.3);
+  --frost-bg: rgb(0, 31, 63, 0.3);
   --toggle-bg: url("/images/Sun.png");
   --icon-filter: invert(1) hue-rotate(180deg);
 }
@@ -130,7 +130,7 @@
 
   .frost {
     background: var(--frost-bg);
-    backdrop-filter: blur(140px);
+    backdrop-filter: blur(70px);
   }
 
   .icon-bg {

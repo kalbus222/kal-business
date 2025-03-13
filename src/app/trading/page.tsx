@@ -567,7 +567,7 @@ export default function GeneralTradingPage() {
       {/* Why Choose Us Section */}
       <section className="py-16 px-4 md:px-12 bg-background">
         <div className="container mx-auto">
-          <div className="bg-[#101724] rounded-3xl p-8 md:p-12">
+          <div className="bg-primary rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
               Why Choose
               <br />
@@ -575,7 +575,7 @@ export default function GeneralTradingPage() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-[#0e1c2a] p-6 rounded-xl">
+              <div className="bg-[#051524] p-6 rounded-xl">
                 <h3 className="text-accent font-semibold text-xl mb-4">
                   Quality Assurance
                 </h3>
@@ -585,7 +585,7 @@ export default function GeneralTradingPage() {
                 </p>
               </div>
 
-              <div className="bg-[#0e1c2a] p-6 rounded-xl">
+              <div className="bg-[#051524] p-6 rounded-xl">
                 <h3 className="text-accent font-semibold text-xl mb-4">
                   Competitive Pricing
                 </h3>
@@ -595,7 +595,7 @@ export default function GeneralTradingPage() {
                 </p>
               </div>
 
-              <div className="bg-[#0e1c2a] p-6 rounded-xl">
+              <div className="bg-[#051524] p-6 rounded-xl">
                 <h3 className="text-accent font-semibold text-xl mb-4">
                   One-Stop Solution
                 </h3>
@@ -606,7 +606,7 @@ export default function GeneralTradingPage() {
                 </p>
               </div>
 
-              <div className="bg-[#0e1c2a] p-6 rounded-xl">
+              <div className="bg-[#051524] p-6 rounded-xl">
                 <h3 className="text-accent font-semibold text-xl mb-4">
                   Fast Delivery
                 </h3>
@@ -616,7 +616,7 @@ export default function GeneralTradingPage() {
                 </p>
               </div>
 
-              <div className="bg-[#0e1c2a] p-6 rounded-xl">
+              <div className="bg-[#051524] p-6 rounded-xl">
                 <h3 className="text-accent font-semibold text-xl mb-4">
                   Customization Options
                 </h3>
@@ -626,7 +626,7 @@ export default function GeneralTradingPage() {
                 </p>
               </div>
 
-              <div className="bg-[#0e1c2a] p-6 rounded-xl">
+              <div className="bg-[#051524] p-6 rounded-xl">
                 <h3 className="text-accent font-semibold text-xl mb-4">
                   After-Sales Support
                 </h3>

@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowDown, ArrowRight } from "lucide-react";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
@@ -44,41 +45,55 @@ const NavBar = () => {
   return (
     <nav className="fixed z-100 px-4 md:px-12 py-4 flex w-full items-center justify-between gap-5">
       <div
-        className={`z-10 p-4 flex items-center justify-center w-20 aspect-square rounded-full border-[1.5px] border-foreground frost`}
+        className={`z-10  aspect-square p-0 rounded-full border-[1.5px] border-accent frost`}
       >
         <Link href="/">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-round.png"
             alt="kal-business logo"
-            width={106}
-            height={73}
-            className="max-w-fit"
+            width={120}
+            height={120}
+            className="max-h-fit"
           />
         </Link>
       </div>
       <div
-        className={`z-5 flex max-h-16 outline-[1.5px] outline-background items-center border-[1.5px] border-foreground basis-full justify-end md:justify-between -ml-10 px-6 py-2 rounded-r-full frost`}
+        className={`z-5 flex max-h-16 items-center border-[1.5px] border-accent basis-full justify-end md:justify-between -ml-10 px-6 py-2 rounded-r-full frost`}
       >
-        <p className="hidden md:inline">KAL GENERAL BUSINESS</p>
-        <div className="hidden md:flex items-center space-x-6">
+        <p className="hidden md:inline font-sofia-sans">KAL GENERAL BUSINESS</p>
+        <div className="hidden md:flex items-center space-x-6 md:space-x-12">
           <div className="relative group">
-            <button className="hover:text-accent">SERVICES</button>
-            <div className="absolute left-auto  hidden w-72 py-3  group-hover:block">
-              <ul className="p-6 bg-primary text-white text-lg shadow-lg rounded-xl">
-                <a href="/trading">
-                  <li className="px-4 py-2 hover:text-accent transition-colors ease-in">
+            <button className="hover:text-accent flex gap-2 items-center">
+              SERVICES <ArrowDown className="h-full w-auto text-accent" />
+            </button>
+            <div className="absolute left-auto hidden w-80 py-3 group-hover:block">
+              <ul className="p-6 bg-primary text-white text-lg shadow-lg rounded-xl border-[1.5px] border-accent">
+                <a
+                  href="/trading"
+                  className="flex items-center justify-between group/link"
+                >
+                  <li className="px-4 py-2 group-hover/link:text-accent transition-colors ease-in">
                     General Trading
                   </li>
+                  <ArrowRight className="h-5 w-5 hidden group-hover/link:block text-accent transition-all duration-200 ease-in-out" />
                 </a>
-                <a href="/financial">
-                  <li className="px-4 py-2 hover:text-accent transition-colors ease-in">
+                <a
+                  href="/financial"
+                  className="flex items-center justify-between group/link"
+                >
+                  <li className="px-4 py-2 group-hover/link:text-accent transition-colors ease-in">
                     Accounting and Financial Services
                   </li>
+                  <ArrowRight className="h-5 w-5 hidden group-hover/link:block text-accent transition-all duration-200 ease-in-out" />
                 </a>
-                <a href="/film">
-                  <li className="px-4 py-2 hover:text-accent transition-colors ease-in">
+                <a
+                  href="/film"
+                  className="flex items-center justify-between group/link"
+                >
+                  <li className="px-4 py-2 group-hover/link:text-accent transition-colors ease-in">
                     Film Production
                   </li>
+                  <ArrowRight className="h-5 w-5 hidden group-hover/link:block text-accent transition-all duration-200 ease-in-out" />
                 </a>
               </ul>
             </div>
@@ -129,7 +144,7 @@ const NavBar = () => {
                 </li>
               </a>
               <button
-                className="pl-4 p-1 border-[1.5px] border-white flex gap-3 items-center rounded-full"
+                className="pl-4 p-1 border-[1.5px] border-accent flex gap-3 items-center rounded-full"
                 onClick={scrollToContact}
               >
                 <p className="text-white text-sm">CONTACT US</p>
@@ -148,7 +163,7 @@ const NavBar = () => {
       </div>
       <button
         onClick={scrollToContact}
-        className={`group hidden border-[1.5px] border-foreground md:flex gap-3 items-center rounded-full w-fit h-14 pl-4 p-1 frost`}
+        className={`group hidden border-[1.5px] border-accent md:flex gap-3 items-center rounded-full w-fit h-14 pl-4 p-1 frost`}
       >
         <p className="whitespace-nowrap font-medium font-mulish">CONTACT US</p>
         <span className="flex items-center justify-center bg-accent aspect-square rounded-full h-full">

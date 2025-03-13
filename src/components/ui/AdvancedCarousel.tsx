@@ -140,11 +140,9 @@ export function AdvancedCarousel({
           }}
         >
           {/* Left side */}
-          <div className="p-8 md:p-12 flex items-center justify-center border-b md:border-b-0 md:border-r border-[#52acdc]/20">
+          <div className="p-8 md:p-12 flex items-center justify-center border-b md:border-b-0 md:border-r border-accent/20">
             <h3 className="text-center text-3xl font-bold">
-              {item.title && (
-                <span className="text-[#52acdc]">{item.title}</span>
-              )}
+              {item.title && <span className="text-accent">{item.title}</span>}
               {item.subtitle && (
                 <>
                   <br />
@@ -207,11 +205,11 @@ export function AdvancedCarousel({
                 <button
                   onClick={() => openYoutubeLink(item.youtubeLink)}
                   className={cn(
-                    "flex items-center justify-center text-[#52acdc]",
+                    "flex items-center justify-center text-accent",
                     arrowStyle === "circle" &&
-                      "w-12 h-12 rounded-full border border-[#52acdc]",
+                      "w-12 h-12 rounded-full border border-accent",
                     arrowStyle === "square" &&
-                      "w-12 h-12 rounded-md border border-[#52acdc]",
+                      "w-12 h-12 rounded-md border border-accent",
                     arrowStyle === "minimal" && "w-auto h-auto"
                   )}
                   aria-label="Watch on YouTube"
@@ -222,11 +220,11 @@ export function AdvancedCarousel({
                 <button
                   onClick={nextSlide}
                   className={cn(
-                    "flex items-center justify-center text-[#52acdc]",
+                    "flex items-center justify-center text-accent",
                     arrowStyle === "circle" &&
-                      "w-12 h-12 rounded-full border border-[#52acdc]",
+                      "w-12 h-12 rounded-full border border-accent",
                     arrowStyle === "square" &&
-                      "w-12 h-12 rounded-md border border-[#52acdc]",
+                      "w-12 h-12 rounded-md border border-accent",
                     arrowStyle === "minimal" && "w-auto h-auto"
                   )}
                   aria-label="Next slide"
@@ -244,7 +242,7 @@ export function AdvancedCarousel({
       return (
         <div
           className={cn(
-            "border border-[#52acdc]/20 rounded-3xl overflow-hidden p-8 transition-opacity",
+            "border border-accent/20 rounded-3xl overflow-hidden p-8 transition-opacity",
             isActive
               ? "opacity-100"
               : "opacity-0 absolute top-0 left-0 pointer-events-none"
@@ -255,7 +253,7 @@ export function AdvancedCarousel({
         >
           {item.title && (
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="text-[#52acdc]">{item.title}</span>
+              <span className="text-accent">{item.title}</span>
               {item.subtitle && (
                 <span className="text-white"> {item.subtitle}</span>
               )}
@@ -281,7 +279,7 @@ export function AdvancedCarousel({
           {item.youtubeLink && (
             <button
               onClick={() => openYoutubeLink(item.youtubeLink)}
-              className="flex items-center gap-2 text-[#52acdc]"
+              className="flex items-center gap-2 text-accent"
               aria-label="Watch on YouTube"
             >
               Watch on YouTube <ExternalLink className="w-4 h-4" />
@@ -318,7 +316,7 @@ export function AdvancedCarousel({
         <div className="absolute bottom-0 left-0 right-0 p-8">
           {item.title && (
             <h3 className="text-2xl md:text-3xl font-bold mb-2">
-              <span className="text-[#52acdc]">{item.title}</span>
+              <span className="text-accent">{item.title}</span>
               {item.subtitle && (
                 <>
                   <br />
@@ -335,7 +333,7 @@ export function AdvancedCarousel({
           {item.youtubeLink && (
             <button
               onClick={() => openYoutubeLink(item.youtubeLink)}
-              className="flex items-center gap-2 text-[#52acdc]"
+              className="flex items-center gap-2 text-accent"
               aria-label="Watch on YouTube"
             >
               Watch on YouTube <ExternalLink className="w-4 h-4" />
@@ -372,11 +370,11 @@ export function AdvancedCarousel({
             <button
               onClick={prevSlide}
               className={cn(
-                "absolute top-1/2 left-4 transform -translate-y-1/2 z-10 text-[#52acdc]",
+                "absolute top-1/2 left-4 transform -translate-y-1/2 z-10 text-accent",
                 arrowStyle === "circle" &&
-                  "w-10 h-10 rounded-full border border-[#52acdc] flex items-center justify-center bg-[#101724]/80",
+                  "w-10 h-10 rounded-full border border-accent flex items-center justify-center bg-primary/80",
                 arrowStyle === "square" &&
-                  "w-10 h-10 rounded-md border border-[#52acdc] flex items-center justify-center bg-[#101724]/80",
+                  "w-10 h-10 rounded-md border border-accent flex items-center justify-center bg-primary/80",
                 arrowStyle === "minimal" && "w-auto h-auto"
               )}
               aria-label="Previous slide"
@@ -386,11 +384,11 @@ export function AdvancedCarousel({
             <button
               onClick={nextSlide}
               className={cn(
-                "absolute top-1/2 right-4 transform -translate-y-1/2 z-10 text-[#52acdc]",
+                "absolute top-1/2 right-4 transform -translate-y-1/2 z-10 text-accent",
                 arrowStyle === "circle" &&
-                  "w-10 h-10 rounded-full border border-[#52acdc] flex items-center justify-center bg-[#101724]/80",
+                  "w-10 h-10 rounded-full border border-accent flex items-center justify-center bg-primary/80",
                 arrowStyle === "square" &&
-                  "w-10 h-10 rounded-md border border-[#52acdc] flex items-center justify-center bg-[#101724]/80",
+                  "w-10 h-10 rounded-md border border-accent flex items-center justify-center bg-primary/80",
                 arrowStyle === "minimal" && "w-auto h-auto"
               )}
               aria-label="Next slide"
@@ -415,7 +413,7 @@ export function AdvancedCarousel({
                 dotStyle === "line" && "h-1 rounded-none",
                 index === currentIndex
                   ? cn(
-                      "bg-[#52acdc]",
+                      "bg-accent",
                       dotStyle === "pill" && "w-8",
                       dotStyle === "line" && "w-8"
                     )

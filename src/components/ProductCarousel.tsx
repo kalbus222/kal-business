@@ -91,7 +91,7 @@ export function ProductCarousel({ slides, className }: ProductCarouselProps) {
             onClick={() => api?.scrollTo(index)}
             className={cn(
               "w-2 h-[5px] rounded-full transition-all",
-              current === index ? "w-8 bg-[#52acdc]" : "bg-secondary"
+              current === index ? "w-8 bg-accent" : "bg-secondary"
             )}
             aria-label={`Go to slide ${index + 1}`}
           />

@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <section className="pt-32 px-6 md:px-12 space-y-6 md:space-y-0">
-        <div className="bg-gradient-to-b from-transparent from-30% via-primary to-primary rounded-[40px] space-y-6 md:space-y-0">
+        <div className="bg-[linear-gradient(to_bottom,transparent_45%,#001f3f_45%)] rounded-[40px] space-y-6 md:space-y-0">
           <div className="grid grid-cols-1 grid-rows-1 gap-6">
             <Image
               src={bgShape}
@@ -44,9 +44,9 @@ export default function Home() {
               </h1>
               <Link
                 href="#contact-section"
-                className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+                className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
               >
-                <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
+                <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
               </Link>
             </div>
             <div className="w-full md:w-[45%] z-10 col-start-1 row-start-1 justify-self-end">
@@ -63,8 +63,8 @@ export default function Home() {
                 YOUR ONE-STOP <br /> SOLUTION FOR <br />{" "}
                 <span className="text-accent">BUSINESS</span>{" "}
               </h1>
-              <button className="group w-10 h-10 rounded-full border border-[#52acdc] flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in">
-                <ArrowDown className="w-5 h-5 text-[#52acdc] -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
+              <button className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in">
+                <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
               </button>
             </div>
             <div className="text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl  rounded-bl-none md:rounded-tr-none border-[0.5px] border-accent/50 p-6">
