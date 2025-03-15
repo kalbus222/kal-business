@@ -1,19 +1,64 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import { ClipLoader } from "react-spinners";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export function ContactCTA() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
+    setLoading(true);
+    emailjs
+      .send(
+        serviceId,
+        templateId,
+        {
+          name,
+          message: phone,
+          email,
+        },
+        publicKey
+      )
+      .then(() => {
+        toast.success(
+          "Email sent successfully! Please check your email and spam folder.",
+          {
+            className: "bg-[#001f3f] border-[1.5px] border-accent font-mulish",
+            progressClassName: "bg-[#c69d45]",
+            icon: false,
+            theme: "dark",
+            closeButton: false,
+          }
+        );
+        setName("");
+        setPhone("");
+        setEmail("");
+        setLoading(false);
+      })
+      .catch((e) => {
+        toast.error("Failed to send email. Please try again.", {
+          className: "bg-[#001f3f] border-[1.5px] border-accent font-mulish",
+          progressClassName: "bg-[#c69d45]",
+          icon: false,
+          theme: "dark",
+          closeButton: false,
+        });
+        console.error("emailjs: ", e);
+        setLoading(false);
+      });
     console.log("Form submitted:", { name, phone, email });
   };
 
@@ -103,14 +148,22 @@ export function ContactCTA() {
               <button
                 type="submit"
                 className="mt-6 w-full bg-accent text-white rounded-full px-6 py-3 font-semibold flex items-center justify-center hover:bg-[#aa883e] transition-colors"
+                disabled={loading}
               >
-                SEND REQUEST
-                <ArrowRight className="w-5 h-5 ml-2" />
+                {loading ? (
+                  <ClipLoader size={20} color={"#ffffff"} loading={loading} />
+                ) : (
+                  <>
+                    SEND REQUEST
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </>
+                )}
               </button>
             </form>
           </div>
         </div>
       </div>
+      <ToastContainer /> {/* Add ToastContainer for toast notifications */}
     </section>
   );
 }
