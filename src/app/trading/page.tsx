@@ -32,11 +32,11 @@ export default function GeneralTradingPage() {
                 <span className="text-accent">Products & Supplies</span>
               </h2>
               <p className="font-mulish text-foreground/90 mb-6">
-                Our General Trading division specializes in importing and
-                distributing high-quality office products and supplies. We offer
-                a comprehensive range of office furniture, stationery, uniforms,
-                electronics, and cleaning supplies to meet all your workplace
-                needs.
+                Our General Trading division specializes in importing, producing
+                and distributing high-quality office products and supplies. We
+                offer a comprehensive range of office furniture, stationery,
+                uniforms, electronics, and cleaning supplies to meet all your
+                workplace needs.
               </p>
               <p className="font-mulish text-foreground/90 mb-6">
                 With established relationships with leading manufacturers
@@ -176,7 +176,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/chair.webp"
                     alt="Ergonomic Office Chair"
                     fill
                     className="object-cover"
@@ -194,7 +194,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/desk.jpg"
                     alt="Executive Desk"
                     fill
                     className="object-cover"
@@ -210,7 +210,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/cabinet.webp"
                     alt="Filing Cabinet"
                     fill
                     className="object-cover"
@@ -226,7 +226,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/conference.jpg"
                     alt="Conference Table"
                     fill
                     className="object-cover"
@@ -254,7 +254,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/notebook.webp"
                     alt="Premium Notebooks"
                     fill
                     className="object-cover"
@@ -272,7 +272,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/writing.jpeg"
                     alt="Executive Pen Set"
                     fill
                     className="object-cover"
@@ -280,7 +280,7 @@ export default function GeneralTradingPage() {
                 </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-accent">
-                    Executive Pen Set
+                    Writing Instruments
                   </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
                     Elegant writing instruments for professionals
@@ -290,23 +290,23 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/cutting.jpeg"
                     alt="Desk Organizers"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-accent">Desk Organizers</h4>
+                  <h4 className="font-semibold text-accent">Cutting Tools</h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Stylish solutions for keeping workspaces tidy
+                    Rozor sharp tools that satisfy your cutting needs
                   </p>
                 </div>
               </div>
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/paper.jpeg"
                     alt="Premium Paper"
                     fill
                     className="object-cover"
@@ -326,47 +326,48 @@ export default function GeneralTradingPage() {
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
               <Users className="w-6 h-6 text-accent mr-2" />
-              Corporate Uniforms
+              Garment and Clothing
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/security.jpeg"
                     alt="Executive Suits"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-accent">Executive Suits</h4>
+                  <h4 className="font-semibold text-accent">
+                    Security Uniforms
+                  </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Tailored professional attire for management
+                    Tailored professional attire for security
                   </p>
                 </div>
               </div>
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/shoes.webp"
                     alt="Corporate Shirts"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-accent">
-                    Corporate Shirts
-                  </h4>
+                  <h4 className="font-semibold text-accent">Saftey Shoes</h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Branded shirts with custom embroidery options
+                    Durable footwear designed to protect against workplace
+                    hazards
                   </p>
                 </div>
               </div>
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/headgear.jpeg"
                     alt="Service Uniforms"
                     fill
                     className="object-cover"
@@ -374,26 +375,28 @@ export default function GeneralTradingPage() {
                 </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-accent">
-                    Service Uniforms
+                    Protective head gear
                   </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Durable and comfortable attire for service staff
+                    Durable head protection for various industrial applications
                   </p>
                 </div>
               </div>
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/tailoring.jpeg"
                     alt="Safety Workwear"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-accent">Safety Workwear</h4>
+                  <h4 className="font-semibold text-accent">
+                    Custom Tailoring
+                  </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Compliant protective clothing for industrial settings
+                    Order custom-fit uniforms and garments, and we deliver.
                   </p>
                 </div>
               </div>
@@ -404,13 +407,13 @@ export default function GeneralTradingPage() {
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
               <Laptop className="w-6 h-6 text-accent mr-2" />
-              Office Electronics
+              Electronics
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/computers.webp"
                     alt="Business Laptops"
                     fill
                     className="object-cover"
@@ -418,7 +421,7 @@ export default function GeneralTradingPage() {
                 </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-accent">
-                    Business Laptops
+                    Laptops and Desktops
                   </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
                     High-performance computers for professional use
@@ -428,7 +431,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/printer.webp"
                     alt="Multifunction Printers"
                     fill
                     className="object-cover"
@@ -446,7 +449,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/accessory.jpg"
                     alt="Conference Systems"
                     fill
                     className="object-cover"
@@ -454,26 +457,29 @@ export default function GeneralTradingPage() {
                 </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-accent">
-                    Conference Systems
+                    Electronic Accessories
                   </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Audio and video equipment for meeting rooms
+                    Essential electronic accessories for everyday office use.
                   </p>
                 </div>
               </div>
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/cartridge.jpeg"
                     alt="Office Phones"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-accent">Office Phones</h4>
+                  <h4 className="font-semibold text-accent">
+                    Printer Ink and Cartridge
+                  </h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Advanced communication systems for businesses
+                    High-quality ink and toner cartridges for crisp, clear
+                    prints and reliable performance.
                   </p>
                 </div>
               </div>
@@ -490,25 +496,23 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/agents.jpg"
                     alt="Professional Cleaners"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-accent">
-                    Professional Cleaners
-                  </h4>
+                  <h4 className="font-semibold text-accent">Cleaning Agents</h4>
                   <p className="font-mulish text-white/80 text-sm mt-1">
-                    Industrial-grade cleaning solutions for all surfaces
+                    Industrial-grade cleaning agents for all surfaces
                   </p>
                 </div>
               </div>
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/equipments.jpg"
                     alt="Cleaning Equipment"
                     fill
                     className="object-cover"
@@ -526,7 +530,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/hygiene.jpeg"
                     alt="Hygiene Products"
                     fill
                     className="object-cover"
@@ -544,7 +548,7 @@ export default function GeneralTradingPage() {
               <div className="bg-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/bins.jpg"
                     alt="Waste Management"
                     fill
                     className="object-cover"

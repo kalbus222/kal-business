@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <div className="bg-primary flex flex-col md:flex-row w-full  px-6 py-10 md:pt-0 rounded-3xl md:rounded-t-none md:px-24">
             <div className="md:hidden flex flex-col items-center w-full text-center mb-6">
-              <h1 className="font-sofia-sans text-3xl">
+              <h1 className="font-sofia-sans text-white text-3xl">
                 YOUR ONE-STOP <br /> SOLUTION FOR <br />{" "}
                 <span className="text-accent">BUSINESS</span>{" "}
               </h1>

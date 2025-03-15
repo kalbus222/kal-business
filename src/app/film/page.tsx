@@ -18,8 +18,8 @@ export default function FilmProductionPage() {
     <main className="min-h-screen bg-background font-sofia-sans">
       {/* Page Header */}
       <PageHeader
-        title="FILM"
-        subtitle="PRODUCTION"
+        title="KALWOOD"
+        subtitle="FILM INDUSTRY"
         description="Transforming ideas into visual masterpieces with innovative storytelling and cinematic excellence."
       />
 
@@ -161,7 +161,7 @@ export default function FilmProductionPage() {
             <div className="bg-foreground rounded-3xl overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <Image
-                  src="/placeholder.svg?height=720&width=1280"
+                  src="/images/yem.png"
                   alt="Yem Productions"
                   fill
                   className="object-cover"
@@ -210,7 +210,7 @@ export default function FilmProductionPage() {
             <div className="bg-foreground rounded-3xl overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <Image
-                  src="/placeholder.svg?height=720&width=1280"
+                  src="/images/scp1.png"
                   alt="The Sweet Children Production"
                   fill
                   className="object-cover"
@@ -410,7 +410,7 @@ export default function FilmProductionPage() {
             {/* Portfolio Item 1 */}
             <div className="group relative rounded-3xl overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/yetefaw.jpg"
                 alt="Featured production 1"
                 width={600}
                 height={400}
@@ -418,19 +418,23 @@ export default function FilmProductionPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  The Journey Within
+                  {"የጠፈዉ ገፅ (yetefew gets) "}
                 </h3>
-                <p className="font-mulish text-white/80">Feature Documentary</p>
-                <button className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
+                <p className="font-mulish text-white/80">Short Film</p>
+                <a
+                  href="https://www.youtube.com/watch?v=uTAhT0EACuw"
+                  target="_blank"
+                  className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
+                >
                   Watch <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
 
             {/* Portfolio Item 2 */}
             <div className="group relative rounded-3xl overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/tilk.jpg"
                 alt="Featured production 2"
                 width={600}
                 height={400}
@@ -438,19 +442,23 @@ export default function FilmProductionPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  Urban Echoes
+                  {"ጥልቅ ፍቅር (Tilk Fikir)"}
                 </h3>
-                <p className="font-mulish text-white/80">Short Film Series</p>
-                <button className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
+                <p className="font-mulish text-white/80">Short Film</p>
+                <a
+                  href="https://www.youtube.com/watch?v=9oghSUwuObk"
+                  target="_blank"
+                  className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
+                >
                   Watch <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
 
             {/* Portfolio Item 3 */}
             <div className="group relative rounded-3xl overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/kibir.jpg"
                 alt="Featured production 3"
                 width={600}
                 height={400}
@@ -458,12 +466,16 @@ export default function FilmProductionPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  Global Brands Campaign
+                  {"ክ-ብር (ke-birr)"}
                 </h3>
-                <p className="font-mulish text-white/80">Commercial Series</p>
-                <button className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit">
+                <p className="font-mulish text-white/80">Short Film</p>
+                <a
+                  href="https://www.youtube.com/watch?v=oZFh8cW4Zxo&t=32s"
+                  target="_blank"
+                  className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
+                >
                   Watch <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
