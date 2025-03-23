@@ -1,13 +1,8 @@
+"use client";
 import type React from "react";
 import Link from "next/link";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Youtube,
-  ArrowRight,
-} from "lucide-react";
+import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import { useState } from "react";
 
 const FooterLink = ({
   href,
@@ -26,20 +21,42 @@ const FooterLink = ({
 
 const SocialIcon = ({
   Icon,
-  href,
+  accounts,
 }: {
   Icon: React.ElementType;
-  href: string;
-}) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-accent hover:text-white transition-colors"
-  >
-    <Icon size={24} />
-  </a>
-);
+  accounts: { name: string; href: string }[];
+}) => {
+  const [showAccounts, setShowAccounts] = useState(false);
+
+  return (
+    <div
+      className=""
+      onMouseEnter={() => setShowAccounts(true)}
+      onMouseLeave={() => setShowAccounts(false)}
+    >
+      <div className="text-accent hover:text-white transition-colors">
+        <Icon size={24} />
+      </div>
+      {showAccounts && (
+        <div className="pb-4 absolute right-14 lg:right-16 bottom-18 ">
+          <div className=" bg-primary border border-accent p-2 rounded shadow-lg w-50">
+            {accounts.map((account) => (
+              <a
+                key={account.name}
+                href={account.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white hover:text-accent transition-colors"
+              >
+                {account.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export function Footer() {
   return (
@@ -58,9 +75,9 @@ export function Footer() {
 
           <div>
             <h3 className="text-2xl font-bold mb-4">Contact Info</h3>
-            <p className="text-gray-300 mb-2">123 Business Avenue</p>
-            <p className="text-gray-300 mb-2">Addis Ababa, Ethiopia</p>
-            <p className="text-gray-300 mb-2">Phone: +251 91 123 45 67</p>
+            <p className="text-gray-300 mb-2">Turufat, Hawassa</p>
+            <p className="text-gray-300 mb-2">Sidama, Ethiopia</p>
+            <p className="text-gray-300 mb-2">Phone: +251 92 471 1079</p>
             <p className="text-gray-300">Email: info@kalbusiness.com</p>
           </div>
         </div>
@@ -73,11 +90,58 @@ export function Footer() {
             reserved.
           </p>
           <div className="flex space-x-4">
-            <SocialIcon Icon={Facebook} href="https://facebook.com" />
-            <SocialIcon Icon={Twitter} href="https://twitter.com" />
-            <SocialIcon Icon={Instagram} href="https://instagram.com" />
-            <SocialIcon Icon={Linkedin} href="https://linkedin.com" />
-            <SocialIcon Icon={Youtube} href="https://youtube.com" />
+            <SocialIcon
+              Icon={FaFacebook}
+              accounts={[
+                {
+                  name: "Yem Facebook",
+                  href: "https://m.facebook.com/61574410614311/",
+                },
+                {
+                  name: "Sweet Children Facebook",
+                  href: "https://m.facebook.com/61574044327067/",
+                },
+              ]}
+            />
+            <SocialIcon
+              Icon={FaTiktok}
+              accounts={[
+                {
+                  name: "Yem TikTok",
+                  href: "https://www.tiktok.com/@yemfilmproduction",
+                },
+                {
+                  name: "Sweet Children TikTok",
+                  href: "https://www.tiktok.com/@thesweetchildren22",
+                },
+              ]}
+            />
+            <SocialIcon
+              Icon={FaInstagram}
+              accounts={[
+                {
+                  name: "Yem Insta",
+                  href: "https://www.instagram.com/yem_film_production/",
+                },
+                {
+                  name: "Sweet Children Insta",
+                  href: "https://www.instagram.com/thesweetchildren22/",
+                },
+              ]}
+            />
+            <SocialIcon
+              Icon={FaYoutube}
+              accounts={[
+                {
+                  name: "Yem Youtube",
+                  href: "https://www.youtube.com/@YemFilmProduction",
+                },
+                {
+                  name: "Sweet Children YouTube",
+                  href: "https://www.youtube.com/@TafachochuLejoch",
+                },
+              ]}
+            />
           </div>
         </div>
       </div>

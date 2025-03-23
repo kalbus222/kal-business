@@ -49,7 +49,7 @@ export default function GeneralTradingPage() {
 
             <div className="rounded-3xl overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/shop.png"
                 alt="Global trading operations"
                 width={800}
                 height={600}

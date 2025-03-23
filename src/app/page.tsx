@@ -30,13 +30,19 @@ export default function Home() {
   return (
     <div>
       <section className="pt-32 px-6 md:px-12 space-y-6 md:space-y-0">
-        <div className="bg-[linear-gradient(to_bottom,transparent_45%,#001f3f_45%)] rounded-[40px] space-y-6 md:space-y-0">
+        <div className="rounded-[40px] space-y-6 md:space-y-0">
           <div className="grid grid-cols-1 grid-rows-1 gap-6">
-            <Image
-              src={bgShape}
-              alt="bg-shape"
+            <svg
+              viewBox="0 0 1310 495"
+              fill="none"
               className="hidden md:inline w-full col-start-1 row-start-1"
-            />
+            >
+              <path
+                d="M655 40C655 17.9086 637.091 0 615 0H40C17.9086 0 0 17.9086 0 40V495H1310V405C1310 382.909 1292.09 365 1270 365H695C672.909 365 655 347.091 655 325V40Z"
+                fill="#001F3F"
+              />
+            </svg>
+
             <div className="hidden md:flex flex-col w-1/2 z-10 col-start-1 row-start-1 justify-self-start lg:p-12 md:p-8">
               <h1 className="font-sofia-sans text-3xl lg:text-6xl text-white">
                 YOUR ONE-STOP <br /> SOLUTION FOR <br />{" "}

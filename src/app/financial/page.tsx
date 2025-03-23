@@ -27,7 +27,7 @@ export default function AccountingConsultingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-3xl overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/consult.png"
                 alt="Financial consulting services"
                 width={800}
                 height={600}
@@ -240,9 +240,9 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-white font-semibold">Sarah Johnson</h4>
+                  <h4 className="text-white font-semibold">Alemayehu Bekele</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
-                    CEO, TechStart Inc.
+                    CEO, AddisTech Solutions
                   </p>
                 </div>
               </div>
@@ -257,9 +257,9 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-white font-semibold">Michael Chen</h4>
+                  <h4 className="text-white font-semibold">Mulugeta Tadesse</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
-                    CFO, Global Logistics
+                    CFO, EthioLogistics
                   </p>
                 </div>
               </div>
@@ -274,9 +274,9 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-white font-semibold">Emily Rodriguez</h4>
+                  <h4 className="text-white font-semibold">Hana Gebremariam</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
-                    Owner, Artisan Crafts
+                    Owner, Abyssinia Crafts
                   </p>
                 </div>
               </div>

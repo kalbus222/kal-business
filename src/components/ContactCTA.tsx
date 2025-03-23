@@ -13,6 +13,7 @@ export function ContactCTA() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
@@ -27,7 +28,7 @@ export function ContactCTA() {
         templateId,
         {
           name,
-          message: phone,
+          message: message + "\n" + phone,
           email,
         },
         publicKey
@@ -100,12 +101,18 @@ export function ContactCTA() {
 
             <div className="mb-8">
               <p className="text-accent mb-1">PHONE</p>
-              <p className="text-white">+251 91 123 45 67</p>
+              <p className="text-white">
+                +251 92 471 1079 &nbsp; | &nbsp; +251 91 072 7277 &nbsp;| &nbsp;
+                +251 46 221 8618
+              </p>
+              {/* <p className="text-white">+251 91 072 7277</p> */}
+              {/* <p className="text-white"></p> */}
             </div>
 
             <div className="mb-8">
               <p className="text-accent mb-1">EMAIL</p>
               <p className="text-white">INFO@KALBUSINESS.COM</p>
+              <p className="text-white">MAIL@KALBUSINESS.COM</p>
             </div>
           </div>
 
@@ -142,6 +149,13 @@ export function ContactCTA() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-transparent border border-accent rounded-full px-4 py-2 text-white placeholder-accent focus:outline-none focus:ring-2 focus:ring-accent"
+                  required
+                />
+                <textarea
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="w-full bg-transparent resize-none h-20 border border-accent rounded-2xl px-4 py-2 text-white placeholder-accent focus:outline-none focus:ring-2 focus:ring-accent [scrollbar-width:none] [-webkit-scrollbar:none]"
                   required
                 />
               </div>
