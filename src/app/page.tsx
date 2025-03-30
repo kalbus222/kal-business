@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import sector1 from "../../public/images/sector1.jpg";
 import sector2 from "../../public/images/sector2.jpg";
@@ -10,6 +11,7 @@ import { ContactCTA } from "@/components/ContactCTA";
 import { ArrowDown } from "lucide-react";
 import { AutoImageCarousel } from "@/components/ImageSlider";
 import Link from "next/link";
+import RollingGallery from "@/components/RollingGallery";
 
 const carouselImages = [
   {
@@ -24,6 +26,13 @@ const carouselImages = [
     src: "/images/accounting.png",
     alt: "Film production scene with camera operator wearing a red mask",
   },
+];
+
+const items = [
+  "Item One",
+  "Item Two",
+  <img src="/images/logo-round.png" alt="Example" className="h-10" />,
+  "Item Four",
 ];
 
 export default function Home() {
@@ -120,6 +129,18 @@ export default function Home() {
       <SourcingSection />
       <FinancialServices />
       <FilmSection />
+      <section className="px-0 md:px-12 flex flex-col items-center  gap-6 md:-space-y-12 mt-16">
+        <div className="bg-primary rounded-2xl w-9/10 md:w-fit p-6 md:p-16 flex flex-col items-center text-center">
+          <h2 className="font-sofia-sans font-bold text-4xl md:text-5xl text-white">
+            TRUSTED BY <br />{" "}
+            <span className="text-accent">INDUSTRY LEADERS</span>
+          </h2>
+          <p className="font-mulish text-lg font-extralight text-white/70">
+            Our valued clients across all our sectors
+          </p>
+        </div>
+        <RollingGallery autoplay={true} pauseOnHover={true} />
+      </section>
       <ContactCTA />
     </div>
   );

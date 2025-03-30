@@ -20,14 +20,14 @@ export default function FilmProductionPage() {
       <PageHeader
         title="KALWOOD"
         subtitle="FILM INDUSTRY"
-        description="Transforming ideas into visual masterpieces with innovative storytelling and cinematic excellence."
+        description="Our name combines the two amharic words 'Kal', meaning pledge, and 'Wood', meaning precious. Together, it symbolizes a precious commitment; a dedication to storytelling, creativity, and excellence in filmmaking."
       />
 
       {/* Hero Section */}
       <section className="relative">
         <div className="w-full h-[60vh] relative">
           <Image
-            src="/images/film1.png"
+            src="/images/film.jpg"
             alt="Film production scene"
             fill
             className="object-cover"
@@ -158,7 +158,7 @@ export default function FilmProductionPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Yem Productions */}
-            <div className="bg-foreground rounded-3xl overflow-hidden shadow-md">
+            <div className="bg-primary rounded-3xl overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <Image
                   src="/images/yem.png"
@@ -185,7 +185,7 @@ export default function FilmProductionPage() {
                     <span>Subscribe</span>
                   </a>
                 </div>
-                <p className="font-mulish text-background/80 mb-4">
+                <p className="font-mulish text-white/50 mb-4">
                   Yem Productions specializes in creating thought-provoking
                   documentaries and short films that explore cultural identities
                   and social issues. With a focus on authentic storytelling,
@@ -193,13 +193,10 @@ export default function FilmProductionPage() {
                   narratives and cinematic quality.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
-                    Documentaries
-                  </span>
-                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
+                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
                     Cultural Films
                   </span>
-                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
+                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
                     Social Impact
                   </span>
                 </div>
@@ -207,7 +204,7 @@ export default function FilmProductionPage() {
             </div>
 
             {/* The Sweet Children Production */}
-            <div className="bg-foreground rounded-3xl overflow-hidden shadow-md">
+            <div className="bg-primary rounded-3xl overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <Image
                   src="/images/scp1.png"
@@ -234,7 +231,7 @@ export default function FilmProductionPage() {
                     <span>Subscribe</span>
                   </a>
                 </div>
-                <p className="font-mulish text-background/80 mb-4">
+                <p className="font-mulish text-white/70 mb-4">
                   The Sweet Children Production creates heartwarming content
                   focused on children's stories and educational entertainment.
                   Their channel features a mix of animated shorts, educational
@@ -242,13 +239,13 @@ export default function FilmProductionPage() {
                   minds while entertaining viewers of all ages.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
+                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
                     Children's Content
                   </span>
-                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
+                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
                     Educational
                   </span>
-                  <span className="bg-background/10 text-background px-3 py-1 rounded-full text-sm">
+                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
                     Family-Friendly
                   </span>
                 </div>
@@ -258,15 +255,15 @@ export default function FilmProductionPage() {
 
           <div className="mt-12 text-center space-y-4">
             <p className="font-mulish text-foreground">
-              Watch our latest collaborations with these amazing production
-              houses on their YouTube channels.
+              Watch our latest works with these amazing production houses on
+              their YouTube channels.
             </p>
             <div className="flex justify-center gap-6">
               <a
                 href="https://youtube.com/channel/yemproductions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-[#1a2536] transition-colors"
+                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
               >
                 <Play className="w-5 h-5" />
                 <span>Yem Productions</span>
@@ -275,7 +272,7 @@ export default function FilmProductionPage() {
                 href="https://youtube.com/channel/sweetchildrenproduction"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-[#1a2536] transition-colors"
+                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
               >
                 <Play className="w-5 h-5" />
                 <span>Sweet Children</span>

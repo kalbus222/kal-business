@@ -7,6 +7,13 @@ import {
   PieChart,
   DollarSign,
   Shield,
+  BarChart,
+  Receipt,
+  Briefcase,
+  FolderCheck,
+  WalletCards,
+  Settings,
+  Scale,
 } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { ContactCTA } from "@/components/ContactCTA";
@@ -78,8 +85,9 @@ export default function AccountingConsultingPage() {
                 Tax Planning & Compliance
               </h3>
               <p className="font-mulish text-white/80 mb-4">
-                Strategic tax planning and preparation services to minimize
-                liabilities and ensure compliance with regulations.
+                Preparation and submission of monthly VAT, withholding, and TOT
+                reports, ensuring regulatory compliance and accurate financial
+                documentation.
               </p>
             </div>
 
@@ -150,6 +158,92 @@ export default function AccountingConsultingPage() {
               <p className="font-mulish text-white/80 mb-4">
                 Identify and mitigate financial risks through comprehensive
                 analysis and strategic planning.
+              </p>
+            </div>
+
+            {/* Service 7 */}
+            <div className="bg-primary p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center mb-6">
+                <BarChart className="w-6 h-6 text-[var(--color-accent)]" />
+              </div>
+              <h3 className="text-xl font-bold text-accent mb-4">
+                Project Marketability Analysis
+              </h3>
+              <p className="font-mulish text-white/80 mb-4">
+                A comprehensive evaluation of a project's potential success,
+                assessing target audience appeal, competitive positioning, and
+                commercial viability.
+              </p>
+            </div>
+
+            {/* Service 8 */}
+            <div className="bg-primary p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center mb-6">
+                <Receipt className="w-6 h-6 text-[var(--color-accent)]" />
+              </div>
+              <h3 className="text-xl font-bold text-accent mb-4">
+                Annual Financial Statements
+              </h3>
+              <p className="font-mulish text-white/80 mb-4">
+                Preparation of accurate and compliant annual financial
+                statements, providing a clear overview of a company's financial
+                performance and position.
+              </p>
+            </div>
+
+            {/* Service 10 */}
+            <div className="bg-primary p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center mb-6">
+                <FolderCheck className="w-6 h-6 text-[var(--color-accent)]" />
+              </div>
+              <h3 className="text-xl font-bold text-accent mb-4">
+                Pre-Audit Preparation
+              </h3>
+              <p className="font-mulish text-white/80 mb-4">
+                Systematic organization of financial records and documentation
+                to ensure a smooth and efficient audit process.
+              </p>
+            </div>
+            {/* Service 12 */}
+            <div className="bg-primary p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center mb-6">
+                <WalletCards className="w-6 h-6 text-[var(--color-accent)]" />
+              </div>
+              <h3 className="text-xl font-bold text-accent mb-4">
+                Payroll & Tax Administration
+              </h3>
+              <p className="font-mulish text-white/80 mb-4">
+                Accurate preparation and reporting of monthly employee salaries,
+                employment taxes, and pension contributions, ensuring compliance
+                and timely disbursement.
+              </p>
+            </div>
+            {/* Service 13 */}
+            <div className="bg-primary p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center mb-6">
+                <Settings className="w-6 h-6 text-[var(--color-accent)]" />
+              </div>
+              <h3 className="text-xl font-bold text-accent mb-4">
+                Software Accounting System Setup
+              </h3>
+              <p className="font-mulish text-white/80 mb-4">
+                Implementation and training of a software-based accounting
+                system, enabling efficient financial management and streamlined
+                processes.
+              </p>
+            </div>
+            {/* Service 14 */}
+            <div className="bg-primary p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center mb-6">
+                <Scale className="w-6 h-6 text-[var(--color-accent)]" />
+              </div>
+              <h3 className="text-xl font-bold text-accent mb-4">
+                Tax Dispute Resolution
+              </h3>
+              <p className="font-mulish text-white/80 mb-4">
+                Preparation and submission of tax appeals and complaints,
+                ensuring proper documentation and representation in resolving
+                tax-related issues.
               </p>
             </div>
           </div>
@@ -234,15 +328,15 @@ export default function AccountingConsultingPage() {
             <div className="bg-[#0e1c2a] p-8 rounded-3xl">
               <p className="font-mulish text-secondary mb-6 italic">
                 "Their financial consulting services transformed our business
-                operations. We've seen a 30% increase in profitability since
+                operations. We've seen an increase in profitability since
                 implementing their strategies."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-white font-semibold">Alemayehu Bekele</h4>
+                  <h4 className="text-white font-semibold">Kibrom Takele</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
-                    CEO, AddisTech Solutions
+                    at BM Solutions
                   </p>
                 </div>
               </div>
@@ -257,9 +351,9 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-white font-semibold">Mulugeta Tadesse</h4>
+                  <h4 className="text-white font-semibold">Felege Yohannes</h4>
                   <p className="font-mulish text-[var(--color-accent)]">
-                    CFO, EthioLogistics
+                    at DFY P.L.C
                   </p>
                 </div>
               </div>
@@ -274,9 +368,11 @@ export default function AccountingConsultingPage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 mr-4"></div>
                 <div>
-                  <h4 className="text-white font-semibold">Hana Gebremariam</h4>
+                  <h4 className="text-white font-semibold">
+                    Enderasu Gezahegn
+                  </h4>
                   <p className="font-mulish text-[var(--color-accent)]">
-                    Owner, Abyssinia Crafts
+                    at Andeab Productions
                   </p>
                 </div>
               </div>
