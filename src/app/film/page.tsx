@@ -20,7 +20,7 @@ export default function FilmProductionPage() {
       <PageHeader
         title="KALWOOD"
         subtitle="FILM INDUSTRY"
-        description="Our name combines the two amharic words 'Kal', meaning pledge, and 'Wood', meaning precious. Together, it symbolizes a precious commitment; a dedication to storytelling, creativity, and excellence in filmmaking."
+        description="Our name Kalwood combines the two amharic words 'Kal', meaning pledge, and 'Wood', meaning precious. Together, it symbolizes a precious commitment; a dedication to storytelling, creativity, and excellence in filmmaking."
       />
 
       {/* Hero Section */}
