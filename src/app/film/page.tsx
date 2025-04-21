@@ -1,3 +1,4 @@
+//@ts-nocheck
 import Image from "next/image";
 import {
   ArrowRight,
@@ -12,8 +13,14 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { ContactCTA } from "@/components/ContactCTA";
+import { getRecentUploads } from "@/lib/youtube";
 
-export default function FilmProductionPage() {
+export default async function FilmProductionPage() {
+  const yemChannelId = "UC3gDetGjMh29XsCsjBJP_NQ";
+  const sweetChildrenChannelId = "UCiMrJCp27VxtLSZkbgyJecg";
+  const yemVideos = await getRecentUploads(yemChannelId);
+  const sweetChildrenVideos = await getRecentUploads(sweetChildrenChannelId);
+
   return (
     <main className="min-h-screen bg-background font-sofia-sans">
       {/* Page Header */}
@@ -394,7 +401,7 @@ export default function FilmProductionPage() {
         </div>
       </section>
 
-      {/* Portfolio Section */}
+      {/* Recents Uploads Section */}
       <section className="py-16 px-4 md:px-12 bg-primary">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12 text-center">
@@ -403,78 +410,85 @@ export default function FilmProductionPage() {
             <span className="text-accent">Productions</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Portfolio Item 1 */}
-            <div className="group relative rounded-3xl overflow-hidden">
-              <Image
-                src="/images/yetefaw.jpg"
-                alt="Featured production 1"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {"የጠፈዉ ገፅ (yetefew gets) "}
-                </h3>
-                <p className="font-mulish text-white/80">Short Film</p>
-                <a
-                  href="https://www.youtube.com/watch?v=uTAhT0EACuw"
-                  target="_blank"
-                  className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
-                >
-                  Watch <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
+          {/* yems latest */}
+          <h2 className="items-center text-2xl md:text-4xl font-medium text-white mb-10">
+            LATEST FROM
+            <span className="flex items-center">
+              <span className="w-12 h-8 pl-4 rounded-full border border-accent flex items-center justify-center mr-2">
+                <ArrowRight className="w-4 h-4 text-accent" />
+              </span>
+              <p className="text-accent">YEM PRODUCTIONS</p>
+            </span>
+          </h2>
 
-            {/* Portfolio Item 2 */}
-            <div className="group relative rounded-3xl overflow-hidden">
-              <Image
-                src="/images/tilk.jpg"
-                alt="Featured production 2"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {"ጥልቅ ፍቅር (Tilk Fikir)"}
-                </h3>
-                <p className="font-mulish text-white/80">Short Film</p>
-                <a
-                  href="https://www.youtube.com/watch?v=9oghSUwuObk"
-                  target="_blank"
-                  className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
-                >
-                  Watch <ArrowRight className="w-4 h-4" />
-                </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 md:mb-20">
+            {/* Portfolio Items */}
+            {yemVideos.map((video) => (
+              <div
+                key={video.videoId}
+                className="group relative rounded-3xl overflow-hidden"
+              >
+                <img
+                  src={video.thumbnail}
+                  alt="Featured production 1"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {video.title}
+                  </h3>
+                  <a
+                    href={`https://www.youtube.com/watch?v=${video.videoId}`}
+                    target="_blank"
+                    className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
+                  >
+                    Watch <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
 
-            {/* Portfolio Item 3 */}
-            <div className="group relative rounded-3xl overflow-hidden">
-              <Image
-                src="/images/kibir.jpg"
-                alt="Featured production 3"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {"ክ-ብር (ke-birr)"}
-                </h3>
-                <p className="font-mulish text-white/80">Short Film</p>
-                <a
-                  href="https://www.youtube.com/watch?v=oZFh8cW4Zxo&t=32s"
-                  target="_blank"
-                  className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
-                >
-                  Watch <ArrowRight className="w-4 h-4" />
-                </a>
+          {/* sweet childrens latest */}
+          <h2 className="items-center text-2xl md:text-4xl font-medium text-white mb-10">
+            LATEST FROM
+            <span className="flex items-center">
+              <span className="w-12 h-8 pl-4 rounded-full border border-accent flex items-center justify-center mr-2">
+                <ArrowRight className="w-4 h-4 text-accent" />
+              </span>
+              <p className="text-accent">THE SWEET CHILDREN</p>
+            </span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 md:mb-20">
+            {/* Portfolio Items */}
+            {sweetChildrenVideos.map((video) => (
+              <div
+                key={video.videoId}
+                className="group relative rounded-3xl overflow-hidden"
+              >
+                <img
+                  src={video.thumbnail}
+                  alt="Featured production 1"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {video.title}
+                  </h3>
+                  <a
+                    href={`https://www.youtube.com/watch?v=${video.videoId}`}
+                    target="_blank"
+                    className="mt-4 bg-accent hover:bg-accent text-white font-semibold py-2 px-4 rounded-full flex items-center gap-2 transition-colors w-fit"
+                  >
+                    Watch <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
