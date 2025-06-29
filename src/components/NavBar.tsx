@@ -45,14 +45,14 @@ const NavBar = () => {
   return (
     <nav className="fixed z-100 px-4 md:px-12 py-4 flex w-full items-center justify-between gap-5">
       <div
-        className={`z-10  aspect-square p-0 rounded-full border-[1.5px] border-accent frost`}
+        className={`z-10  aspect-square p-0 rounded-full border-[1.5px] border-accent frost p-5`}
       >
         <Link href="/">
           <Image
-            src="/images/logo-round.png"
+            src="/images/logo-icon.png"
             alt="kal-business logo"
-            width={120}
-            height={120}
+            width={80}
+            height={80}
             className="max-h-fit"
           />
         </Link>

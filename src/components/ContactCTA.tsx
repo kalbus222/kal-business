@@ -87,10 +87,10 @@ export function ContactCTA() {
           {/* Left Column */}
           <div className="bg-primary rounded-3xl p-8 font-sofia-sans">
             <Image
-              src="/images/logo-round.png"
+              src="/images/logo.png"
               alt="KAL Business Logo"
-              width={50}
-              height={50}
+              width={265}
+              height={64}
               className="mb-4"
             />
             <h3 className="text-white text-2xl font-semibold mb-1">
