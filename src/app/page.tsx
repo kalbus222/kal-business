@@ -3,6 +3,7 @@ import Image from "next/image";
 import sector1 from "../../public/images/sector1.jpg";
 import sector2 from "../../public/images/sector2.jpg";
 import sector3 from "../../public/images/sector3.jpg";
+import sector4 from "../../public/images/film1.jpg";
 import bgShape from "../../public/images/bg-shape.png";
 import { SourcingSection } from "@/components/ProductSection";
 import { FinancialServices } from "@/components/AccountingSection";
@@ -109,7 +110,7 @@ export default function Home() {
                 Financial strategies that drive business success.
               </p>
             </div>
-            <div className="text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl rounded-tr-none md:rounded-bl-none border-[0.5px] border-accent/50 p-6">
+            <div className="text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl rounded-tl-none rounded-br-none md:rounded-tl-none md:rounded-br-none border-[0.5px] border-accent/50 p-6">
               <Image
                 src={sector3}
                 className="object-cover h-24 rounded-full"
@@ -122,6 +123,23 @@ export default function Home() {
                 Transforming ideas into visual masterpieces.
               </p>
             </div>
+            <Link
+              href="/academy"
+              className="group text-center md:text-start flex flex-col gap-3 md:gap-6 basis-full rounded-4xl rounded-tr-none md:rounded-bl-none border-[0.5px] border-accent/50 p-6 transition-colors hover:border-accent"
+            >
+              <Image
+                src={sector4}
+                className="object-cover h-24 rounded-full"
+                alt="sector"
+              />
+              <h2 className="font-sofia-sans text-xl text-accent flex items-center justify-center md:justify-start gap-2">
+                YEM Film Academy
+                <ArrowDown className="w-4 h-4 -rotate-45 opacity-0 group-hover:opacity-100 group-hover:-rotate-90 transition-all ease-in" />
+              </h2>
+              <p className="text-secondary text-sm font-mulish font-light">
+                Training the next generation of storytellers.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

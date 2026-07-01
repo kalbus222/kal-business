@@ -39,7 +39,7 @@ const SocialIcon = ({
       </div>
       {showAccounts && (
         <div className="pb-4 absolute right-14 lg:right-16 bottom-18 ">
-          <div className=" bg-primary border border-accent p-2 rounded shadow-lg w-50">
+          <div className=" bg-primary border border-accent p-2 rounded shadow-lg w-64">
             {accounts.map((account) => (
               <a
                 key={account.name}
@@ -95,11 +95,19 @@ export function Footer() {
               accounts={[
                 {
                   name: "Yem Facebook",
-                  href: "https://m.facebook.com/61574410614311/",
+                  href: "https://web.facebook.com/profile.php?id=61574410614311",
                 },
                 {
-                  name: "Sweet Children Facebook",
-                  href: "https://m.facebook.com/61574044327067/",
+                  name: "Tafachochu Lijoch Facebook",
+                  href: "https://web.facebook.com/profile.php?id=61574044327067",
+                },
+                {
+                  name: "Ye-wan Production Facebook",
+                  href: "https://web.facebook.com/profile.php?id=61576135721146",
+                },
+                {
+                  name: "Yem Film Academy Facebook",
+                  href: "https://web.facebook.com/profile.php?id=61589186353726",
                 },
               ]}
             />
@@ -108,11 +116,19 @@ export function Footer() {
               accounts={[
                 {
                   name: "Yem TikTok",
-                  href: "https://www.tiktok.com/@yemfilmproduction",
+                  href: "https://www.tiktok.com/@yem_film_production?lang=en",
                 },
                 {
-                  name: "Sweet Children TikTok",
-                  href: "https://www.tiktok.com/@thesweetchildren22",
+                  name: "Tafachochu Lijoch TikTok",
+                  href: "https://www.tiktok.com/@tafachochu_lijoch",
+                },
+                {
+                  name: "Ye-wan Production TikTok",
+                  href: "https://www.tiktok.com/@ye_wan_production",
+                },
+                {
+                  name: "WWW Yem TikTok",
+                  href: "https://www.tiktok.com/@wwwyem?lang=en",
                 },
               ]}
             />
@@ -124,8 +140,12 @@ export function Footer() {
                   href: "https://www.instagram.com/yem_film_production/",
                 },
                 {
-                  name: "Sweet Children Insta",
+                  name: "Tafachochu Lijoch Insta",
                   href: "https://www.instagram.com/thesweetchildren22/",
+                },
+                {
+                  name: "Yem Film Academy Insta",
+                  href: "https://www.instagram.com/yem_filmpro/",
                 },
               ]}
             />
@@ -137,8 +157,20 @@ export function Footer() {
                   href: "https://www.youtube.com/@YemFilmProduction",
                 },
                 {
-                  name: "Sweet Children YouTube",
-                  href: "https://www.youtube.com/@TafachochuLejoch",
+                  name: "Tafachochu Lijoch YouTube",
+                  href: "https://www.youtube.com/@tafachochu_lijoch",
+                },
+                {
+                  name: "Ye-wan Production 2 YouTube",
+                  href: "https://www.youtube.com/@kal222-d5c",
+                },
+                {
+                  name: "Ye-wan Production YouTube",
+                  href: "https://www.youtube.com/@Ye_wan_Production",
+                },
+                {
+                  name: "Yem Film Academy YouTube",
+                  href: "https://www.youtube.com/@YemFilmAcademy-p8t",
                 },
               ]}
             />

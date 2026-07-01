@@ -95,6 +95,15 @@ const NavBar = () => {
                   </li>
                   <ArrowRight className="h-5 w-5 hidden group-hover/link:block text-accent transition-all duration-200 ease-in-out" />
                 </a>
+                <a
+                  href="/academy"
+                  className="flex items-center justify-between group/link"
+                >
+                  <li className="px-4 py-2 group-hover/link:text-accent transition-colors ease-in">
+                    YEM Film Academy
+                  </li>
+                  <ArrowRight className="h-5 w-5 hidden group-hover/link:block text-accent transition-all duration-200 ease-in-out" />
+                </a>
               </ul>
             </div>
           </div>
@@ -141,6 +150,11 @@ const NavBar = () => {
               <a href="/film">
                 <li className="px-4 py-2 text-white hover:text-accent transition-colors ease-in">
                   Film Production
+                </li>
+              </a>
+              <a href="/academy">
+                <li className="px-4 py-2 text-white hover:text-accent transition-colors ease-in">
+                  YEM Film Academy
                 </li>
               </a>
               <button
