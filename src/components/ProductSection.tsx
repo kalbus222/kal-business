@@ -38,7 +38,7 @@ const carouselSlides = [
 export function SourcingSection({ className }: SourcingSectionProps) {
   return (
     <section className={cn("w-full py-12 px-5 md:px-12", className)}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left column */}
           <div className="flex flex-col space-y-6">

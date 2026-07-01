@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div>
       <section className="pt-32 px-6 md:px-12 space-y-6 md:space-y-0">
-        <div className="rounded-[40px] space-y-6 md:space-y-0">
+        <div className="mx-auto w-full max-w-7xl rounded-[40px] space-y-6 md:space-y-0">
           <div className="grid grid-cols-1 grid-rows-1 gap-6">
             <svg
               viewBox="0 0 1310 495"
@@ -79,7 +79,11 @@ export default function Home() {
                 YOUR ONE-STOP <br /> SOLUTION FOR <br />{" "}
                 <span className="text-accent">BUSINESS</span>{" "}
               </h1>
-              <button className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in">
+              <button
+                type="button"
+                aria-label="Scroll to contact section"
+                className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+              >
                 <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
               </button>
             </div>
@@ -147,8 +151,73 @@ export default function Home() {
       <SourcingSection />
       <FinancialServices />
       <FilmSection />
-      <section className="px-0 md:px-12 flex flex-col items-center  gap-6 md:-space-y-12 mt-16">
-        <div className="bg-primary rounded-2xl w-9/10 md:w-fit p-6 md:p-16 flex flex-col items-center text-center">
+      <section className="px-4 md:px-12 py-16">
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 overflow-hidden rounded-[2rem] bg-primary lg:grid-cols-2 lg:items-stretch">
+          <div className="relative min-h-[360px] overflow-hidden lg:min-h-[520px] lg:h-full">
+            <Image
+              src="/images/clapper.png"
+              alt="YEM Film Academy training environment"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary/30 to-transparent" />
+            <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+              <div className="max-w-md">
+                <p className="font-mulish text-accent text-sm uppercase tracking-[0.3em] mb-3">
+                  Film Training
+                </p>
+                <h2 className="font-sofia-sans text-4xl md:text-5xl text-white leading-tight">
+                  YEM FILM
+                  <br />
+                  <span className="text-accent">ACADEMY</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-8 md:p-12 lg:p-16">
+            <div className="max-w-xl">
+              <h3 className="font-sofia-sans text-2xl md:text-3xl text-white mb-4">
+                Learn the craft inside a working production house.
+              </h3>
+              <p className="font-mulish text-white/80 text-base md:text-lg leading-relaxed mb-8">
+                The academy section is built for hands-on learning across
+                writing, directing, acting, cinematography, editing, and design
+                so students can train in a setting that feels like a real film
+                set from day one.
+              </p>
+
+              <div className="flex flex-wrap gap-3 mb-10">
+                {[
+                  "Script Writing",
+                  "Directing",
+                  "Acting",
+                  "Cinematography",
+                  "Editing",
+                  "Graphics",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-sm font-mulish text-white"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <Link
+                href="/academy"
+                className="inline-flex items-center gap-3 rounded-full border border-accent px-5 py-3 font-mulish text-white transition-colors hover:bg-accent hover:text-primary"
+              >
+                Explore the Academy
+                <ArrowDown className="h-4 w-4 -rotate-45" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-0 md:px-12 flex flex-col items-center gap-6 md:-space-y-12 mt-16">
+        <div className="bg-primary rounded-2xl w-full max-w-6xl p-6 md:p-16 flex flex-col items-center text-center">
           <h2 className="font-sofia-sans font-bold text-4xl md:text-5xl text-white">
             TRUSTED BY <br />{" "}
             <span className="text-accent">INDUSTRY LEADERS</span>

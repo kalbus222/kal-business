@@ -18,7 +18,7 @@ export function FinancialServices({ className }: FinancialServiceProps) {
     <section
       className={cn("w-full py-12 px-5 md:px-12 font-sofia-sans", className)}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Main panel */}
           <div className="lg:col-span-5 bg-primary rounded-3xl p-8 lg:p-12 flex flex-col justify-between">

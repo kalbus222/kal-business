@@ -42,37 +42,39 @@ export function FilmSection() {
           muted
         />
       </div>
-      <section className="grid grid-rows-1 grid-cols-1 place-items-center w-full h-fit md:py-12 px-4 md:px-12">
-        <div className="hidden md:block relative h-fit col-start-1 row-start-1">
-          <h2 className="absolute right-0 font-sofia-sans text-5xl text-foreground">
-            FROM SCRIPT <br /> <span className="text-accent">TO SCREEN</span>
-          </h2>
-          <video
-            src="/videos/output.webm"
-            className="w-full h-full object-cover [mask-image:url('/images/videoClip.png')]  [mask-size:contain] [mask-repeat:no-repeat]"
-            autoPlay
-            loop
-            muted
-          />
-        </div>
-        <div className="bg-primary w-9/10 rounded-3xl p-6 md:p-12 space-y-4 col-start-1 row-start-1 z-10 mt-4 md:mt-96 ">
-          <div className="flex justify-between">
-            <h2 className="font-sofia-sans text-3xl text-white">
-              SOME OF OUR <br />{" "}
-              <span className="text-accent">PRODUCTIONS</span>
+      <section className="w-full h-fit md:py-12 px-4 md:px-12">
+        <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 grid-rows-1 place-items-center">
+          <div className="hidden md:block relative h-fit col-start-1 row-start-1 w-full">
+            <h2 className="absolute right-0 font-sofia-sans text-5xl text-foreground">
+              FROM SCRIPT <br /> <span className="text-accent">TO SCREEN</span>
             </h2>
-            <Link
-              href="/film"
-              className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
-            >
-              <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
-            </Link>
+            <video
+              src="/videos/output.webm"
+              className="w-full h-full object-cover [mask-image:url('/images/videoClip.png')] [mask-size:contain] [mask-repeat:no-repeat]"
+              autoPlay
+              loop
+              muted
+            />
           </div>
-          <AdvancedCarousel
-            items={productionItems}
-            showArrows={false}
-            autoPlay={true}
-          />
+          <div className="bg-primary w-full rounded-3xl p-6 md:p-12 space-y-4 col-start-1 row-start-1 z-10 mt-4 md:mt-96">
+            <div className="flex justify-between">
+              <h2 className="font-sofia-sans text-3xl text-white">
+                SOME OF OUR <br />{" "}
+                <span className="text-accent">PRODUCTIONS</span>
+              </h2>
+              <Link
+                href="/film"
+                className="group w-10 h-10 rounded-full border border-accent flex items-center px-2 justify-center hover:justify-end hover:w-18 transition-all ease-in"
+              >
+                <ArrowDown className="w-5 h-5 text-accent -rotate-45 group-hover:-rotate-90 transition-all ease-in" />
+              </Link>
+            </div>
+            <AdvancedCarousel
+              items={productionItems}
+              showArrows={false}
+              autoPlay={true}
+            />
+          </div>
         </div>
       </section>
     </>
