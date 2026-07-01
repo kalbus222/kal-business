@@ -19,11 +19,28 @@ export function ContactCTA() {
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    emailjs
-      .send(
+    if (!serviceId || !templateId || !publicKey) {
+      toast.error("Email service is not configured.", {
+        className: "bg-[#001f3f] border-[1.5px] border-accent font-mulish",
+        progressClassName: "bg-[#c69d45]",
+        icon: false,
+        theme: "dark",
+        closeButton: false,
+      });
+      console.error("EmailJS config missing", {
+        serviceId: Boolean(serviceId),
+        templateId: Boolean(templateId),
+        publicKey: Boolean(publicKey),
+      });
+      setLoading(false);
+      return;
+    }
+
+    try {
+      await emailjs.send(
         serviceId,
         templateId,
         {
@@ -32,34 +49,78 @@ export function ContactCTA() {
           email,
         },
         publicKey
-      )
-      .then(() => {
-        toast.success(
-          "Email sent successfully! Please check your email and spam folder.",
-          {
-            className: "bg-[#001f3f] border-[1.5px] border-accent font-mulish",
-            progressClassName: "bg-[#c69d45]",
-            icon: false,
-            theme: "dark",
-            closeButton: false,
-          }
-        );
-        setName("");
-        setPhone("");
-        setEmail("");
-        setLoading(false);
-      })
-      .catch((e) => {
-        toast.error("Failed to send email. Please try again.", {
+      );
+
+      toast.success(
+        "Email sent successfully! Please check your email and spam folder.",
+        {
           className: "bg-[#001f3f] border-[1.5px] border-accent font-mulish",
           progressClassName: "bg-[#c69d45]",
           icon: false,
           theme: "dark",
           closeButton: false,
-        });
-        console.error("emailjs: ", e);
-        setLoading(false);
+        }
+      );
+      setName("");
+      setPhone("");
+      setEmail("");
+      setMessage("");
+    } catch (error: unknown) {
+      toast.error("Failed to send email. Please try again.", {
+        className: "bg-[#001f3f] border-[1.5px] border-accent font-mulish",
+        progressClassName: "bg-[#c69d45]",
+        icon: false,
+        theme: "dark",
+        closeButton: false,
       });
+
+      const emailjsError = error as
+        | {
+            status?: unknown;
+            text?: unknown;
+            message?: unknown;
+          }
+        | string
+        | null;
+      const status =
+        emailjsError && typeof emailjsError === "object" && "status" in emailjsError
+          ? emailjsError.status
+          : undefined;
+      const text =
+        emailjsError && typeof emailjsError === "object" && "text" in emailjsError
+          ? emailjsError.text
+          : undefined;
+      const messageValue =
+        error instanceof Error
+          ? error.message
+          : typeof emailjsError === "string"
+            ? emailjsError
+            : emailjsError && typeof emailjsError === "object" && "message" in emailjsError
+              ? emailjsError.message
+              : undefined;
+      const rawValue =
+        typeof error === "string"
+          ? error
+          : error instanceof Error
+            ? error.stack || error.message
+            : error && typeof error === "object"
+              ? JSON.stringify(error, Object.getOwnPropertyNames(error))
+              : String(error);
+
+      console.error(`EmailJS send failed: ${rawValue}`);
+      console.error("EmailJS error details", {
+        status,
+        text,
+        message: messageValue,
+        errorType: error === null ? "null" : typeof error,
+        ownKeys:
+          error && typeof error === "object"
+            ? Object.getOwnPropertyNames(error)
+            : [],
+      });
+    } finally {
+      setLoading(false);
+    }
     console.log("Form submitted:", { name, phone, email });
   };
 
