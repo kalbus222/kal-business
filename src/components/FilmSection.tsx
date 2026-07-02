@@ -19,11 +19,35 @@ const productionItems: CarouselItem[] = [
   },
   {
     id: 2,
-    title: "THE SWEET CHILDREN",
+    title: "TAFACHOCHU LIJOCH",
     subtitle: "KIDS PRODUCTION",
     description:
       "create fun and exciting videos for kids, filled with games, songs, challenges, crafts, and more! Whether you want to learn something new or just have a blast, you’re in the right place. Join us for loads of laughter, creativity, and adventures — don’t forget to hit subscribe and never miss the fun!",
-    youtubeLink: "https://www.youtube.com/@TafachochuLejoch",
+    youtubeLink: "https://www.youtube.com/@tafachochu_lijoch",
+  },
+  {
+    id: 3,
+    title: "YE-WAN PRODUCTION",
+    subtitle: "FILM CHANNEL",
+    description:
+      "Ye-wan Production shares film content, behind-the-scenes moments, and creative work that expands the studio's production lineup.",
+    youtubeLink: "https://www.youtube.com/@Ye_wan_Production",
+  },
+  {
+    id: 4,
+    title: "YE-WAN PRODUCTION 2",
+    subtitle: "FILM CHANNEL",
+    description:
+      "A second Ye-wan production channel featuring more projects, updates, and film-related content.",
+    youtubeLink: "https://www.youtube.com/@kal222-d5c",
+  },
+  {
+    id: 5,
+    title: "YEM FILM ACADEMY",
+    subtitle: "TRAINING CHANNEL",
+    description:
+      "YEM Film Academy focuses on training, learning, and the creative process behind filmmaking and visual storytelling.",
+    youtubeLink: "https://www.youtube.com/@YemFilmAcademy-p8t",
   },
 ];
 
