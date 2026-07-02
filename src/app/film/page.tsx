@@ -21,6 +21,49 @@ export default async function FilmProductionPage() {
   const yemVideos = await getRecentUploads(yemChannelId);
   const sweetChildrenVideos = await getRecentUploads(sweetChildrenChannelId);
 
+  const filmChannels = [
+    {
+      title: "Yem Film Production",
+      description:
+        "Cinematic storytelling, behind-the-scenes moments, and high-quality film work from the main production house.",
+      href: "https://www.youtube.com/@YemFilmProduction",
+      image: "/images/yem.png",
+      badges: ["Films", "Production"],
+    },
+    {
+      title: "Tafachochu Lijoch",
+      description:
+        "Creative kids content, fun stories, and family-friendly productions built for young audiences.",
+      href: "https://www.youtube.com/@tafachochu_lijoch",
+      image: "/images/scp1.png",
+      badges: ["Kids", "Family-Friendly"],
+    },
+    {
+      title: "Ye-wan Production",
+      description:
+        "A focused film channel for new projects, creative updates, and production-house storytelling.",
+      href: "https://www.youtube.com/@Ye_wan_Production",
+      image: "/images/film.jpg",
+      badges: ["Films", "Creative"],
+    },
+    {
+      title: "Ye-wan Production 2",
+      description:
+        "A second Ye-wan channel for more film content, project drops, and studio updates.",
+      href: "https://www.youtube.com/@kal222-d5c",
+      image: "/images/clapper.png",
+      badges: ["Studio", "Projects"],
+    },
+    {
+      title: "YEM Film Academy",
+      description:
+        "Training and learning content for the next generation of filmmakers and storytellers.",
+      href: "https://www.youtube.com/@YemFilmAcademy-p8t",
+      image: "/images/film1.jpg",
+      badges: ["Training", "Academy"],
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-background font-sofia-sans">
       {/* Page Header */}
@@ -164,125 +207,105 @@ export default async function FilmProductionPage() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Yem Productions */}
-            <div className="bg-primary rounded-3xl overflow-hidden shadow-md">
-              <div className="aspect-video relative">
-                <Image
-                  src="/images/yem.png"
-                  alt="Yem Productions"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                  <Youtube className="w-20 h-20 text-[#ff0000]" />
+            {filmChannels.map((channel) => (
+              <div
+                key={channel.title}
+                className="bg-primary rounded-3xl overflow-hidden shadow-md"
+              >
+                <div className="aspect-video relative">
+                  <Image
+                    src={channel.image}
+                    alt={channel.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <Youtube className="w-20 h-20 text-[#ff0000]" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between gap-4 mb-4">
+                    <h3 className="text-2xl font-semibold text-accent">
+                      {channel.title}
+                    </h3>
+                    <a
+                      href={channel.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-[#ff0000] text-white px-4 py-2 rounded-full hover:bg-[#cc0000] transition-colors"
+                    >
+                      <Youtube className="w-5 h-5" />
+                      <span>Subscribe</span>
+                    </a>
+                  </div>
+                  <p className="font-mulish text-white/70 mb-4">
+                    {channel.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {channel.badges.map((badge) => (
+                      <span
+                        key={badge}
+                        className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm"
+                      >
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-semibold text-accent">
-                    Yem Productions
-                  </h3>
-                  <a
-                    href="https://youtube.com/channel/yemproductions"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-[#ff0000] text-white px-4 py-2 rounded-full hover:bg-[#cc0000] transition-colors"
-                  >
-                    <Youtube className="w-5 h-5" />
-                    <span>Subscribe</span>
-                  </a>
-                </div>
-                <p className="font-mulish text-white/50 mb-4">
-                  Yem Productions specializes in creating thought-provoking
-                  documentaries and short films that explore cultural identities
-                  and social issues. With a focus on authentic storytelling,
-                  their channel has garnered recognition for its compelling
-                  narratives and cinematic quality.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
-                    Cultural Films
-                  </span>
-                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
-                    Social Impact
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* The Sweet Children Production */}
-            <div className="bg-primary rounded-3xl overflow-hidden shadow-md">
-              <div className="aspect-video relative">
-                <Image
-                  src="/images/scp1.png"
-                  alt="The Sweet Children Production"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                  <Youtube className="w-20 h-20 text-[#ff0000]" />
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-semibold text-accent">
-                    The Sweet Children Production
-                  </h3>
-                  <a
-                    href="https://youtube.com/channel/sweetchildrenproduction"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-[#ff0000] text-white px-4 py-2 rounded-full hover:bg-[#cc0000] transition-colors"
-                  >
-                    <Youtube className="w-5 h-5" />
-                    <span>Subscribe</span>
-                  </a>
-                </div>
-                <p className="font-mulish text-white/70 mb-4">
-                  The Sweet Children Production creates heartwarming content
-                  focused on children's stories and educational entertainment.
-                  Their channel features a mix of animated shorts, educational
-                  series, and family-friendly documentaries that inspire young
-                  minds while entertaining viewers of all ages.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
-                    Children's Content
-                  </span>
-                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
-                    Educational
-                  </span>
-                  <span className="bg-white/10 text-white/70 px-3 py-1 rounded-full text-sm">
-                    Family-Friendly
-                  </span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="mt-12 text-center space-y-4">
             <p className="font-mulish text-foreground">
-              Watch our latest works with these amazing production houses on
-              their YouTube channels.
+              Watch our latest works with these production houses on their
+              YouTube channels.
             </p>
-            <div className="flex justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://youtube.com/channel/yemproductions"
+                href="https://www.youtube.com/@YemFilmProduction"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
               >
                 <Play className="w-5 h-5" />
-                <span>Yem Productions</span>
+                <span>Yem Film Production</span>
               </a>
               <a
-                href="https://youtube.com/channel/sweetchildrenproduction"
+                href="https://www.youtube.com/@tafachochu_lijoch"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
               >
                 <Play className="w-5 h-5" />
-                <span>Sweet Children</span>
+                <span>Tafachochu Lijoch</span>
+              </a>
+              <a
+                href="https://www.youtube.com/@Ye_wan_Production"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
+              >
+                <Play className="w-5 h-5" />
+                <span>Ye-wan Production</span>
+              </a>
+              <a
+                href="https://www.youtube.com/@kal222-d5c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
+              >
+                <Play className="w-5 h-5" />
+                <span>Ye-wan Production 2</span>
+              </a>
+              <a
+                href="https://www.youtube.com/@YemFilmAcademy-p8t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full hover:bg-foreground/60 transition-colors"
+              >
+                <Play className="w-5 h-5" />
+                <span>YEM Film Academy</span>
               </a>
             </div>
           </div>
@@ -417,7 +440,7 @@ export default async function FilmProductionPage() {
               <span className="w-12 h-8 pl-4 rounded-full border border-accent flex items-center justify-center mr-2">
                 <ArrowRight className="w-4 h-4 text-accent" />
               </span>
-              <p className="text-accent">YEM PRODUCTIONS</p>
+              <p className="text-accent">YEM FILM PRODUCTION</p>
             </span>
           </h2>
 
@@ -458,7 +481,7 @@ export default async function FilmProductionPage() {
               <span className="w-12 h-8 pl-4 rounded-full border border-accent flex items-center justify-center mr-2">
                 <ArrowRight className="w-4 h-4 text-accent" />
               </span>
-              <p className="text-accent">THE SWEET CHILDREN</p>
+              <p className="text-accent">TAFACHOCHU LIJOCH</p>
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 md:mb-20">
